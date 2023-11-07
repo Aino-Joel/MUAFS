@@ -6,6 +6,12 @@ const mongoose = require('mongoose')
 //express app
 const app = express()
 
+//middleware
+app.use((req, res, next) => {
+    console.log(req.path, req.method);
+    next()
+})
+
 //routes
 
 //connect to db
