@@ -1,0 +1,3 @@
+[submodule "frontend/frontend/hostelbooking"]
+	path = frontend/frontend/hostelbooking
+	url = https://github.com/jauhara-nk/hostelbooking.git
