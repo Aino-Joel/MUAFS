@@ -14,10 +14,9 @@ function Home() {
           Trust us to get you a home away from home
         </p>
         <Link to={'/hostels'}>Start Now</Link>
-      
       </div>
     </section>
-    
+
     </div>
   )
 }
