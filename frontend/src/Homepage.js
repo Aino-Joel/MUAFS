@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import Login from "./login";
+import Login from "./Login";
 import NotificationsPage from "./Notifications";
 //import {useLocation} from 'react-router-dom';
 //import {toast} from 'react-toastify';
-//import Footer from "./footer";
+import Footer from "./footer";
 
 const Homepage = () => {
     //const location = useLocation();
@@ -158,7 +158,7 @@ const Homepage = () => {
             <div className="card-progress">
               <small>New E-mails received</small>
               <div className="card-indicator">
-                <div className="indicator four" />
+                <div className="indicator four" style={{ width: "90%" }} />
               </div>
             </div>
           </div>
@@ -167,8 +167,11 @@ const Homepage = () => {
     </main>
   </div>
 </>
-
+<div>
+  <Footer />
+</div>
         </div>
+
     );
 };
 
