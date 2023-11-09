@@ -66,7 +66,7 @@ img{
   }
   
   .content h1 {
-    font-size: 56px;
+    font-size: 46px;
     font-weight: bolder;
   }
   
@@ -82,7 +82,7 @@ img{
     text-decoration: none;
     background-color: purple;
     padding: 12px 24px;
-    font-size: 22px;
+    font-size: 20px;
     border-radius: 10px;
   }
   .content a:hover{
