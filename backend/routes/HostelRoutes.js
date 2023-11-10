@@ -12,6 +12,12 @@ router.get('/', (req, res) => {
 })
 
 //GET single hostel
+router.get('/:id', (req, res) => {
+    const {id} = req.params
 
+    const hostel = Hostel.findById(id)
+
+    res.status(200).json(hostel)
+})
 
 module.exports = router
