@@ -15,6 +15,10 @@ router.get('/', (req, res) => {
 router.get('/:id', (req, res) => {
     const {id} = req.params
 
+    if(!mongoose.Types.ObjectId.isValid(id)){
+        return res.status(404).json({error: "No such Workout"})
+    }
+
     const hostel = Hostel.findById(id)
 
     if(!hostel){
