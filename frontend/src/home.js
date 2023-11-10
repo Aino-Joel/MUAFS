@@ -63,32 +63,37 @@ function Home() {
         <div className='main-cards'>
             <div className='card'>
                 <div className='card-inner'>
-                    <h3>POPULAR</h3>
+                    <h4>POPULAR</h4>
                     <BsFillArchiveFill className='card_icon'/>
                 </div>
-                {/* <a href="dreamworldhostel"> </a> */}
-                <h1>DREAM WORLD</h1>
+                <a href="">
+                <h3>DREAM WORLD</h3>
+                </a>
             </div>
             <div className='card'>
                 <div className='card-inner'>
                     <h2>PREFERRRED LOCATION</h2>
                     <BsFillGrid3X3GapFill className='card_icon'/>
                 </div>
+                <a href="">
                 <h3>KIKONI A</h3>
+                </a>
             </div>
-            <div className='card'>
+            {/* <div className='card'>
                 <div className='card-inner'>
                     <h3>CUSTOMERS</h3>
                     <BsPeopleFill className='card_icon'/>
                 </div>
                 <h1>YEAR 3 STUDENTS</h1>
-            </div>
+            </div> */}
             <div className='card'>
                 <div className='card-inner'>
                     <h3>most rated</h3>
                     <BsFillBellFill className='card_icon'/>
                 </div>
-                <h1>olympia hostel</h1>
+                <a href="">
+                <h2>olympia hostel</h2>
+                </a>
             </div>
         </div>
 
