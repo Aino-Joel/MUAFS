@@ -8,7 +8,7 @@ function Home() {
       <Header/>
       <section className="hero"  >
       <div className="content">
-        <h1>MUAFS</h1>
+        <h1>CampusCrib</h1>
         <p>
           {" "}
           Trust us to get you a home away from home
@@ -25,10 +25,12 @@ function Home() {
                     </div>
                     <div class = "product-info">
                         <br/>
-                    <h2 class = "product-brand"><Link to={'/hostels'}>Nakiyingi Hostel</Link></h2>
+                    <h2 class = "product-brand"><Link to={'/hostels'}>Nakiyingi Hostel, Kikoni</Link></h2>
+                    
                     <br/>
                   
-                <span class = "price">shs 1,100,000</span><span class = "actual-price">4.5(1234) </span>
+                <span class = "actual-price">4.5(1234) </span>
+                
                 </div>
                 </div>
                 <div class = "product-card">
@@ -37,9 +39,12 @@ function Home() {
                 </div>
                 <div class = "product-info">
                     <br/>
-                <h2 class = "product-brand">Olympia Hostel, Kikoni</h2>
+                    <h2 class = "product-brand"><Link to={'/hostels'}>Nakiyingi Hostel, Kikoni</Link></h2>
+                    
                 <br/>
-                <span class = "price">shs 900000</span><span class = "actual-price">ugshs 85000 </span>
+                  
+                <span class = "actual-price">4.5(1234) </span>
+                
                 </div>
                 </div>
                 <div class = "product-card">
@@ -48,9 +53,11 @@ function Home() {
                 </div>
                 <div class = "product-info">
                     <br/>
-                <h2 class = "product-brand">Waveny Hostel,Kikoni</h2>
-                <br/>
-                <span class = "price">ugshs 52000</span><span class = "actual-price">ugshs 65000 </span>
+                    <h2 class = "product-brand"><Link to={'/hostels'}>Nakiyingi Hostel, Kikoni</Link></h2>
+                    
+                <br/> 
+                <span class = "actual-price">4.5(1234) </span>
+                
                 </div>
                 </div>
                 <div class = "product-card">
@@ -60,15 +67,98 @@ function Home() {
                 </div>
                 <div class = "product-info">
                     <br/>
-                <h2 class = "product-brand">Soam</h2>
+                    <h2 class = "product-brand"><Link to={'/hostels'}>Nakiyingi Hostel, Kikoni</Link></h2>
+                    
                 <br/>
-                <span class = "price">ugshs 52000</span><span class = "actual-price">ugshs 65000 </span>
+                  
+                <span class = "actual-price">4.5(1234) </span>
                 
             </div>
                 
             </div>
             </div>
             </div>
+            < div className="product">
+  <h2 className="product-category">
+    Popular Residences <tr/> 
+    <span className='price'>
+    <Link to={'/hostels'}>View all hostels</Link>  
+    </span>
+  </h2>
+  <br />
+  <div className="product-container">
+    <div className="product-card">
+      <div className="product-image">
+        <img src="./pictures/room1.jpg" className="product-thumb" alt="" />
+      </div>
+      <div className="product-info">
+        <h2 className="product-brand">brand</h2>
+        <span className="price">ugshs 52000</span>
+        <span className="actual-price">ugshs 65000 </span>
+      </div>
+    </div>
+    <div className="product-card">
+      <div className="product-image">
+        <img src="./pictures/room1.jpg" className="product-thumb" alt="" />
+      </div>
+      <div className="product-info">
+        <h2 className="product-brand">brand</h2>
+        <span className="price">ugshs 64000</span>
+        <span className="actual-price">ugshs 85000 </span>
+      </div>
+    </div>
+    <div className="product-card">
+      <div className="product-image">
+        <img src="./pictures/room1.jpg" className="product-thumb" alt="" />
+      </div>
+      <div className="product-info">
+        <h2 className="product-brand">brand</h2>
+        <span className="price">ugshs 52000</span>
+        <span className="actual-price">ugshs 65000 </span>
+      </div>
+    </div>
+    <div className="product-card">
+      <div className="product-image">
+        <img src="./pictures/room1.jpg" className="product-thumb" alt="" />
+      </div>
+      <div className="product-info">
+        <h2 className="product-brand">brand</h2>
+        <span className="price">ugshs 52000</span>
+        <span className="actual-price">ugshs 65000 </span>
+      </div>
+    </div>
+    <div className="product-card">
+      <div className="product-image">
+        <img src="./pictures/room1.jpg" className="product-thumb" alt="" />
+      </div>
+      <div className="product-info">
+        <h2 className="product-brand">brand</h2>
+        <span className="price">ugshs 52000</span>
+        <span className="actual-price">ugshs 65000 </span>
+      </div>
+    </div>
+    <div className="product-card">
+      <div className="product-image">
+        <img src="../pictures/man8.jpg" className="product-thumb" alt="" />
+      </div>
+      <div className="product-info">
+        <h2 className="product-brand">brand</h2>
+        <span className="price">ugshs 52000</span>
+        <span className="actual-price">ugshs 65000 </span>
+      </div>
+    </div>
+    <div className="product-card">
+      <div className="product-image">
+        <img src="../pictures/kid9.jpg" className="product-thumb" alt="" />
+      </div>
+      <div className="product-info">
+        <h2 className="product-brand">brand</h2>
+        <span className="price">ugshs 52000</span>
+        <span className="actual-price">ugshs 65000 </span>
+      </div>
+    </div>
+  </div>
+</div>
     </div>
   )
 }

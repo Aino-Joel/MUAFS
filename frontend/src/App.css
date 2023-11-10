@@ -129,40 +129,39 @@ background-color: rgb(162, 64, 64);
     height: 350px;
     object-fit: cover;
 }
-.product-info{
-    width: 200px;
-    height: 100px;
-    padding-top:10px;
 
-}
 .product-brand{
     text-transform: capitalize;
-    font-size: 15px;
+    font-size: 20px;
     text-align: center;
     color:black;  
 }
 .product-brand a{
     color:black;
+    text-decoration: none;
 }
 .product-brand a:hover{
-    color:rgb(115, 115, 66);
+    color: rgb(162, 64, 64);
+    width: auto;
+    text-decoration: underline;
 }
 
-.price{
+.actual-price{
+   text-align: center;
+    text-decoration: none;
+    font-size:17px ;
+   margin-left: 90px;
     font-weight: 900;
-    font-size: 13px;
-    text-align: right;
+}
+.price{
+  font-size: 15px;
+  font-weight: 900;
+  position: relative;
 }
 .price a{
-    color: black;
+  text-decoration: none;
+  color:rgb(4, 27, 19);
 }
 .price a:hover{
-    color: rgb(46, 36, 36);
-}
-.actual-price{
-    margin-left: 20px;
-    text-decoration: none;
-    font-size:13px ;
-    text-align: left;
-    font-weight: 900;
+  color:rgb(162, 64, 64);
 }
