@@ -82,7 +82,7 @@ function Home() {
   <h2 className="product-category">
     Popular Residences <tr/> 
     <span className='price'>
-    <Link to={'/hostels'}>View all hostels</Link>  
+    <Link to={'/ratings'}>View all hostels</Link>  
     </span>
   </h2>
   <br />
