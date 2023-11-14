@@ -39,7 +39,7 @@ function Home() {
                 </div>
                 <div class = "product-info">
                     <br/>
-                    <h2 class = "product-brand"><Link to={'/hostels'}>Nakiyingi Hostel, Kikoni</Link></h2>
+                    <h2 class = "product-brand"><Link to={'/details'}>Nakiyingi Hostel, Kikoni</Link></h2>
                     
                 <br/>
                   
