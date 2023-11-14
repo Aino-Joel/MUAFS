@@ -1,4 +1,4 @@
-const Hostel = require('../models/HostelModel.js')
+const Hostel = require('../models/hostelModel')
 const mongoose = require('mongoose')
 
 const getHostels = async (req, res) => {
