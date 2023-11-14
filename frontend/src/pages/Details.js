@@ -1,12 +1,13 @@
 import React from 'react'
 import Header from './Header'
 
-function HostelDetails() {
+function Details() {
   return (
     <div>
-     <Header/>
+      <Header/>
+      hey
     </div>
   )
 }
 
-export default HostelDetails
+export default Details
