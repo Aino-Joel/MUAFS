@@ -164,6 +164,22 @@ img{
 .content a:hover{
 background-color: black;
 }
+@media screen and (max-width: 768px) {
+  .content h1 {
+    font-size: 28px; /* Further reducing font size for smaller screens */
+  }
+
+  .content p {
+    font-size: 16px; /* Further reducing font size for smaller screens */
+    max-width: 90%; /* Adjusting max-width for smaller screens */
+  }
+
+  .content a {
+    padding: 8px 16px; /* Further adjusting padding for smaller screens */
+    font-size: 16px; /* Further reducing font size for smaller screens */
+    margin-top: 10px; /* Further adjusting margin for better spacing on smaller screens */
+  }
+}
 
 .description{
   position: relative;
@@ -181,10 +197,20 @@ background-color: black;
 .description-container{
   padding: 0 10vw;
   display: flex;
-  overflow-x: auto;
-  scroll-behavior: smooth;
+
+ 
 
 }
 .description-container::-webkit-scrollbar{
   display: none;
+}
+@media screen and (max-width: 768px) {
+  .description-category {
+    font-size: 20px; /* Adjust font size for smaller screens */
+  }
+  
+  .description-container {
+    padding: 0 5vw; /* Adjust padding for smaller screens */
+    flex-direction: column; /* Change to a column layout on smaller screens */
+  }
 }
