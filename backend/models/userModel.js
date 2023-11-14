@@ -22,10 +22,23 @@ const userSchema = new Schema({
 //static signup method
 userSchema.statics.signup = async function(email, regNo, password) {
 
+   //validation
+    if(!email || !password){
+        throw Error('All fields should be filled')
+    }
+
+    const exists = await this.findOne({email})
+
+    if (exists){
+        throw Error('Email already exists')
+    }
+
+    //hash password
     const salt = await bcrypt.genSalt(10)
 
     const hash = await bcrypt.hash(password, salt)
 
+    //create user
     const user = await this.create({ email, regNo, password: hash })
 
     return user
