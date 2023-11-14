@@ -31,7 +31,22 @@ img{
   color:black;
   
 }
+@media screen and (max-width: 768px) {
+  .Header {
+    flex-direction:row; /* Changing to a column layout on smaller screens */
+    align-items: flex-start; /* Adjusting alignment for better readability on smaller screens */
+  }
 
+  img {
+    width: 15%; /* Adjusting image size for smaller screens */
+    margin-bottom: 10px; /* Adding margin for better spacing on smaller screens */
+  }
+
+  .Header a {
+    font-size: 14px; /* Further reducing font size for smaller screens */
+    padding: 8px; /* Further adjusting padding for smaller screens */
+  }
+}
   .product{
     position: relative;
     overflow: hidden;
