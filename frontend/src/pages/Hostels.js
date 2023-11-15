@@ -23,13 +23,11 @@ AccessibilityEventsLibrariesMapsDepartmentsConnectCarolinaUNC Search
 Sk
 Original paragraph
 
-Although most people consider piranhas to be quite dangerous, they are, for the most part, entirely harmless. Piranhas rarely feed on large animals; they eat smaller fish and aquatic plants. When confronted with humans, piranhas’ first instinct is to flee, not attack. Their fear of humans makes sense. Far more piranhas are eaten by people than people are eaten by piranhas. A number of South American groups eat piranhas. They fry or grill the fish and then serve them with coconut milk or tucupi, a sauce made from fermented manioc juices.
 
-Revised paragraph
-
-g Center • University of North Carolina at Chapel Hill
-               
-            </div>
+            </div> 
+            <br/> 
+            <Link className="description-header" to={'/hostels'}>See more</Link>
+            <h4 className="description-header">See More</h4>
             </div>
     </div>
   )
