@@ -1,11 +1,19 @@
 import React from 'react'
 import Header from './Header'
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
+
 
 function Signup() {
   return (
+    
     <div>
-        <Header/>
+      <Header/>
       signup
+
+
+
     </div>
   )
 }
