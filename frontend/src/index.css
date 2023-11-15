@@ -610,6 +610,30 @@ table tbody tr {
         width: 900px;
     }
 
+    /* Footer.css */
+.footer {
+  background-color: black;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 20px;
+  text-align: center;
+}
+
+.social-links {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.social-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
     /* App.css */
 
 /* Navigation Bar Styles */
