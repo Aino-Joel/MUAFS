@@ -5,6 +5,14 @@ const validator = require('validator')
 const Schema = mongoose.Schema
 
 const userSchema = new Schema({
+    fName: {
+        type: String,
+        required: true
+    },
+    lName: {
+        type: String,
+        required: true
+    },
     email: {
         type: String,
         required: true,
@@ -12,7 +20,8 @@ const userSchema = new Schema({
     },
     regNo: {
         type: String,
-        required: true
+        required: true,
+        unique: true
     },
     password: {
         type: String,
@@ -21,10 +30,10 @@ const userSchema = new Schema({
 })
 
 //static signup method
-userSchema.statics.signup = async function(email, regNo, password) {
+userSchema.statics.signup = async function(fName, lName, email, regNo, password) {
 
    //validation
-    if(!email || !regNo || !password){
+    if(!fName || !lName || !email || !regNo || !password){
         throw Error('All fields should be filled')
     }
     if(!validator.isEmail(email)){
@@ -34,10 +43,15 @@ userSchema.statics.signup = async function(email, regNo, password) {
         throw Error('Passsword is not strong enough')
     }
 
-    const exists = await this.findOne({email})
+    //check if email or regNo exists
+    const existsEmail = await this.findOne({email})
+    const existsRegNo = await this.findOne({regNo})
 
-    if (exists){
+    if (existsEmail){
         throw Error('Email already exists')
+    }
+    if (existsRegNo){
+        throw Error('User with Registration Number already exists')
     }
 
     //hash password
@@ -46,21 +60,28 @@ userSchema.statics.signup = async function(email, regNo, password) {
     const hash = await bcrypt.hash(password, salt)
 
     //create user
-    const user = await this.create({ email, regNo, password: hash })
+    const user = await this.create({ fName, lName, email, regNo, password: hash })
 
     return user
 }
 
 //static login method
-userSchema.statics.login = async function(email, regNo, password){
-    if(!email || !regNo || !password){
+userSchema.statics.login = async function(email, password){
+    if(!email || !password){
         throw Error('All fields should be filled')
     }
 
-    const user = await this.findOne({email})
+    var user = null
 
+//allow a user to user either reg no or email
+    if(validator.isEmail(email)){
+        user = await this.findOne({email})
+    } else {
+        user = await this.findOne({regNo: email})
+    }
+    
     if (!user){
-        throw Error('Incorrect email')
+        throw Error('Incorrect email or Registration Number')
     }
 
     const match = await bcrypt.compare(password, user.password)

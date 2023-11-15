@@ -7,10 +7,10 @@ const createToken = (_id) => {
 
 //login user
 const loginUser = async(req, res) => {
-    const {email, regNo, password} = req.body
+    const {email, password} = req.body
 
     try{
-        const user = await User.login(email, regNo, password)
+        const user = await User.login(email, password)
 
         //create token
         const token = createToken(user._id)
@@ -24,10 +24,10 @@ const loginUser = async(req, res) => {
 
 //signup user
 const signupUser = async(req, res) => {
-    const { email, regNo, password } = req.body
+    const { fName, lName, email, regNo, password } = req.body
 
     try{
-        const user = await User.signup(email, regNo, password)
+        const user = await User.signup(fName, lName, email, regNo, password)
 
         //create token
         const token = createToken(user._id)
