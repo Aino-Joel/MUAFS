@@ -212,10 +212,13 @@ background-color: black;
 .description-container{
   padding: 0 10vw;
   display: flex;
-
- 
-
+  
 }
+.description-header{
+    padding: 0 10vw;
+  display: flex;
+  }
+
 .description-container::-webkit-scrollbar{
   display: none;
 }
