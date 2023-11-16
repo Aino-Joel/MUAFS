@@ -4,7 +4,7 @@ import Login from "./Login";
 import NotificationsPage from "./Notifications";
 //import {useLocation} from 'react-router-dom';
 //import {toast} from 'react-toastify';
-import Footer from "./footer";
+import Footer from "../footer";
 
 const Homepage = () => {
     //const location = useLocation();
