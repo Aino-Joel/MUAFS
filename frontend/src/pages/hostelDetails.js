@@ -227,6 +227,17 @@ const HostelDetails = () => {
           />
         </div>        
         
+        <div className="form-group">
+          <label htmlFor="doubleRoomImages">Double Room Images:</label>
+          <input
+            type="file"
+            id="doubleRoomImages"
+            name="doubleRoomImages"
+            accept="image/*"
+            multiple
+            onChange={(e) => handleImageUpload(e, 'doubleRoom')}
+          />
+        </div>
       </form>
       </div>
     </div>
