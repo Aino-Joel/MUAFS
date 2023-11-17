@@ -28,3 +28,14 @@ const HostelDetails = () => {
       [name]: value,
     });
   };
+
+  const handleImageUpload = (e, imageType) => {
+    const imageFiles = Array.from(e.target.files);
+    setHostelInfo({
+      ...hostelInfo,
+      [imageType]: {
+        ...hostelInfo[imageType],
+        images: imageFiles,
+      },
+    });
+  };
