@@ -73,9 +73,9 @@ const HostelDetails = () => {
   };
   
   return (
-    < className="hostel-details-container">
+    <div className="hostel-details-container">
       <h1>HOSTEL DETAILS</h1>
-      < className="form-container">
+      <div className="form-container">
       <form className="hostel-details-form" onSubmit={handleSubmit}>
         <div className="form-group">
           <label htmlFor="name">Hostel Name:</label>
@@ -249,11 +249,59 @@ const HostelDetails = () => {
             multiple
             onChange={(e) => handleImageUpload(e, 'hostelExteriorImages')}
           />
-        </div>        
+        </div>
+
+        <div className="form-group">
+          <label>Is Hostel Fully Booked:</label>
+          <label className="switch">
+            <input
+              type="checkbox"
+              name="fullyBooked"
+              checked={hostelInfo.fullyBooked}
+              onChange={handleFullyBookedToggle}
+            />
+            <span className="slider round"></span>
+          </label>
+        </div>
+
+        <button type="submit">Save</button>
       </form>
       </div>
+      <div className="hostel-view-section">
+        <h2>Hostel View</h2>
+        <div className="hostel-images">
+          {/* Exterior Image */}
+          <div className="image-container">
+            <h3>Exterior</h3>
+            {hostelInfo.hostelExteriorImages.length > 0
+              ? hostelInfo.hostelExteriorImages.map((image, index) => (
+                  <img key={index} src={URL.createObjectURL(image)} alt="Hostel Exterior" />
+                ))
+              : renderTestImage('Exterior')}
+          </div>
+          {/* Single Room Image */}
+          <div className="image-container">
+            <h3>Single Room :UGX 1,800,000 {hostelInfo.singleRoom.price}</h3>
+            {hostelInfo.singleRoom.images.length > 0
+              ? hostelInfo.singleRoom.images.map((image, index) => (
+                  <img key={index} src={URL.createObjectURL(image)} alt="Single Room" />
+                ))
+              : renderTestImage('Single Room')}
+          </div>
+          {/* Double Room Image */}
+          <div className="image-container">
+            <h3>Double Room :UGX 1,200,000{hostelInfo.doubleRoom.price}</h3>
+            {hostelInfo.doubleRoom.images.length > 0
+              ? hostelInfo.doubleRoom.images.map((image, index) => (
+                  <img key={index} src={URL.createObjectURL(image)} alt="Double Room" />
+                ))
+              : renderTestImage('Double Room')}
+          </div>
+        </div>
+        </div>
+
     </div>
   );
 };
 
-export default HostelDetails;    
+export default HostelDetails;
