@@ -176,7 +176,57 @@ const HostelDetails = () => {
               })
             }
           />
-        </div>                       
+        </div>
+
+        <div className="form-group">
+          <label htmlFor="singleRoomImages">Single Room Images:</label>
+          <input
+            type="file"
+            id="singleRoomImages"
+            name="singleRoomImages"
+            accept="image/*"
+            multiple
+            onChange={(e) => handleImageUpload(e, 'singleRoom')}
+          />
+        </div>
+
+        <div className="form-group">
+          <label htmlFor="doubleRoomPrice">Double Room Price:</label>
+          <input
+            type="text"
+            id="doubleRoomPrice"
+            name="doubleRoomPrice"
+            value={hostelInfo.doubleRoom.price}
+            onChange={(e) =>
+              setHostelInfo({
+                ...hostelInfo,
+                doubleRoom: {
+                  ...hostelInfo.doubleRoom,
+                  price: e.target.value,
+                },
+              })
+            }
+          />
+        </div>
+
+        <div className="form-group">
+          <label htmlFor="doubleRoomDescription">Double Room Description:</label>
+          <textarea
+            id="doubleRoomDescription"
+            name="doubleRoomDescription"
+            value={hostelInfo.doubleRoom.description}
+            onChange={(e) =>
+              setHostelInfo({
+                ...hostelInfo,
+                doubleRoom: {
+                  ...hostelInfo.doubleRoom,
+                  description: e.target.value,
+                },
+              })
+            }
+          />
+        </div>        
+        
       </form>
       </div>
     </div>
