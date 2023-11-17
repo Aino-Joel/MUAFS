@@ -46,7 +46,7 @@ const HostelDetails = () => {
       fullyBooked: !hostelInfo.fullyBooked,
     });
   };
-  
+
   const handleAmenitiesChange = (e) => {
     const { value } = e.target;
     const updatedAmenities = [...hostelInfo.amenities];
@@ -61,4 +61,13 @@ const HostelDetails = () => {
       ...hostelInfo,
       amenities: updatedAmenities,
     });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Handle form submission, e.g., send data to the server
+    console.log('Submitted Hostel Info:', hostelInfo);
+  };
+  const renderTestImage = (altText) => {
+    return <img src={"./olympia.jpg"} alt={altText} />;
   };
