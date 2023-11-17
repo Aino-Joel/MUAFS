@@ -73,9 +73,9 @@ const HostelDetails = () => {
   };
   
   return (
-    <div className="hostel-details-container">
+    < className="hostel-details-container">
       <h1>HOSTEL DETAILS</h1>
-      <div className="form-container">
+      < className="form-container">
       <form className="hostel-details-form" onSubmit={handleSubmit}>
         <div className="form-group">
           <label htmlFor="name">Hostel Name:</label>
@@ -136,30 +136,11 @@ const HostelDetails = () => {
                 onChange={handleAmenitiesChange}
                 checked={hostelInfo.amenities.includes('Balcony')}
               />
-                            Balcony
+             Balcony
             </label>
           </div>
         </div>
 
-<div className="form-group">
-  <label htmlFor="singleRoomPrice">Single Room Price:</label>
-  <input
-    type="text"
-    id="singleRoomPrice"
-    name="singleRoomPrice"
-    value={hostelInfo.singleRoom.price}
-    onChange={(e) =>
-      setHostelInfo({
-        ...hostelInfo,
-        singleRoom: {
-          ...hostelInfo.singleRoom,
-          price: e.target.value,
-        },
-      })
-    }
-  />
-</div>
-
         <div className="form-group">
           <label htmlFor="singleRoomPrice">Single Room Price:</label>
           <input
@@ -180,23 +161,22 @@ const HostelDetails = () => {
         </div>
 
         <div className="form-group">
-          <label htmlFor="singleRoomPrice">Single Room Price:</label>
-          <input
-            type="text"
-            id="singleRoomPrice"
-            name="singleRoomPrice"
-            value={hostelInfo.singleRoom.price}
+          <label htmlFor="singleRoomDescription">Single Room Description:</label>
+          <textarea
+            id="singleRoomDescription"
+            name="singleRoomDescription"
+            value={hostelInfo.singleRoom.description}
             onChange={(e) =>
               setHostelInfo({
                 ...hostelInfo,
                 singleRoom: {
                   ...hostelInfo.singleRoom,
-                  price: e.target.value,
+                  description: e.target.value,
                 },
               })
             }
           />
-        </div>                                       
+        </div>                       
       </form>
       </div>
     </div>
