@@ -39,3 +39,19 @@ const HostelDetails = () => {
       },
     });
   };
+
+  const handleAmenitiesChange = (e) => {
+    const { value } = e.target;
+    const updatedAmenities = [...hostelInfo.amenities];
+
+    if (updatedAmenities.includes(value)) {
+      updatedAmenities.splice(updatedAmenities.indexOf(value), 1);
+    } else {
+      updatedAmenities.push(value);
+    }
+
+    setHostelInfo({
+      ...hostelInfo,
+      amenities: updatedAmenities,
+    });
+  };
