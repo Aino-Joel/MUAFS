@@ -40,6 +40,13 @@ const HostelDetails = () => {
     });
   };
 
+  const handleFullyBookedToggle = () => {
+    setHostelInfo({
+      ...hostelInfo,
+      fullyBooked: !hostelInfo.fullyBooked,
+    });
+  };
+  
   const handleAmenitiesChange = (e) => {
     const { value } = e.target;
     const updatedAmenities = [...hostelInfo.amenities];
