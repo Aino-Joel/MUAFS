@@ -117,7 +117,25 @@ const HostelDetails = () => {
                 value="Wi-Fi"
                 onChange={handleAmenitiesChange}
                 checked={hostelInfo.amenities.includes('Wi-Fi')}
-              />                 
+              />
+              Wi-Fi
+            </label>
+            <label>
+              <input
+                type="checkbox"
+                value="Gym"
+                onChange={handleAmenitiesChange}
+                checked={hostelInfo.amenities.includes('Gym')}
+              />
+              Gym
+            </label>
+            <label>
+              <input
+                type="checkbox"
+                value="Balcony"
+                onChange={handleAmenitiesChange}
+                checked={hostelInfo.amenities.includes('Balcony')}
+              />                               
       </form>
       </div>
     </div>
