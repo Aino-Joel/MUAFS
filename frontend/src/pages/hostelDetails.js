@@ -135,7 +135,11 @@ const HostelDetails = () => {
                 value="Balcony"
                 onChange={handleAmenitiesChange}
                 checked={hostelInfo.amenities.includes('Balcony')}
-              />                               
+              />
+                            Balcony
+            </label>
+          </div>
+        </div>                               
       </form>
       </div>
     </div>
