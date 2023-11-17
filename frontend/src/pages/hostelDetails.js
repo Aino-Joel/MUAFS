@@ -139,7 +139,64 @@ const HostelDetails = () => {
                             Balcony
             </label>
           </div>
-        </div>                               
+        </div>
+
+<div className="form-group">
+  <label htmlFor="singleRoomPrice">Single Room Price:</label>
+  <input
+    type="text"
+    id="singleRoomPrice"
+    name="singleRoomPrice"
+    value={hostelInfo.singleRoom.price}
+    onChange={(e) =>
+      setHostelInfo({
+        ...hostelInfo,
+        singleRoom: {
+          ...hostelInfo.singleRoom,
+          price: e.target.value,
+        },
+      })
+    }
+  />
+</div>
+
+        <div className="form-group">
+          <label htmlFor="singleRoomPrice">Single Room Price:</label>
+          <input
+            type="text"
+            id="singleRoomPrice"
+            name="singleRoomPrice"
+            value={hostelInfo.singleRoom.price}
+            onChange={(e) =>
+              setHostelInfo({
+                ...hostelInfo,
+                singleRoom: {
+                  ...hostelInfo.singleRoom,
+                  price: e.target.value,
+                },
+              })
+            }
+          />
+        </div>
+
+        <div className="form-group">
+          <label htmlFor="singleRoomPrice">Single Room Price:</label>
+          <input
+            type="text"
+            id="singleRoomPrice"
+            name="singleRoomPrice"
+            value={hostelInfo.singleRoom.price}
+            onChange={(e) =>
+              setHostelInfo({
+                ...hostelInfo,
+                singleRoom: {
+                  ...hostelInfo.singleRoom,
+                  price: e.target.value,
+                },
+              })
+            }
+          />
+        </div>                                       
       </form>
       </div>
     </div>
