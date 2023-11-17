@@ -98,7 +98,26 @@ const HostelDetails = () => {
             onChange={handleInputChange}
           />
         </div>
-        
+
+        <div className="form-group">
+          <label htmlFor="amenities">Amenities:</label>
+          <div>
+            <label>
+              <input
+                type="checkbox"
+                value="Shuttle"
+                onChange={handleAmenitiesChange}
+                checked={hostelInfo.amenities.includes('Shuttle')}
+              />     
+              Shuttle
+            </label>
+            <label>
+              <input
+                type="checkbox"
+                value="Wi-Fi"
+                onChange={handleAmenitiesChange}
+                checked={hostelInfo.amenities.includes('Wi-Fi')}
+              />                 
       </form>
       </div>
     </div>
