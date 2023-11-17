@@ -71,3 +71,38 @@ const HostelDetails = () => {
   const renderTestImage = (altText) => {
     return <img src={"./olympia.jpg"} alt={altText} />;
   };
+  
+  return (
+    <div className="hostel-details-container">
+      <h1>HOSTEL DETAILS</h1>
+      <div className="form-container">
+      <form className="hostel-details-form" onSubmit={handleSubmit}>
+        <div className="form-group">
+          <label htmlFor="name">Hostel Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            value={hostelInfo.name}
+            onChange={handleInputChange}
+          />
+        </div>
+        
+        <div className="form-group">
+          <label htmlFor="location">Hostel Location:</label>
+          <input
+            type="text"
+            id="location"
+            name="location"
+            value={hostelInfo.location}
+            onChange={handleInputChange}
+          />
+        </div>
+        
+      </form>
+      </div>
+    </div>
+  );
+};
+
+export default HostelDetails;    
