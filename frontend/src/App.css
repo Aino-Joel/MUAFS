@@ -1,0 +1,49 @@
+
+.Header {
+  background:#397e66;
+  display:flex;
+  gap:20px;
+  align-items: center;
+  justify-content: center;
+}
+img{
+  width:8%;
+  height: 9%;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  padding-left: 1px;
+  float:left;
+}
+.Header a {
+  color:white;
+  text-decoration: none;
+ text-align: right;
+  padding: 20px 10px;
+  font: size 20px;;
+  font-style: normal;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 200;
+   float:right;
+}
+
+.Header a:hover{
+  text-decoration:underline;
+  color:black;
+  
+}
+@media screen and (max-width: 768px) {
+  .Header {
+    flex-direction:row; /* Changing to a column layout on smaller screens */
+    align-items: flex-start; /* Adjusting alignment for better readability on smaller screens */
+  }
+
+  img {
+    width: 15%; /* Adjusting image size for smaller screens */
+    margin-bottom: 10px; /* Adding margin for better spacing on smaller screens */
+  }
+
+  .Header a {
+    font-size: 14px; /* Further reducing font size for smaller screens */
+    padding: 8px; /* Further adjusting padding for smaller screens */
+  }
+}

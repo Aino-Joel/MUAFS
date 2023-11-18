@@ -1,53 +1,34 @@
-import React, { useState } from 'react';
-// import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+// import logo from './logo.svg';
 import './App.css';
-import Homepage from './Homepage';
-import Login from './Login';
-import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
-import NotificationsPage from './Notifications';
-import notifications from './Notifications';
-import HostelDetails from './HostelDetails/HostelDetails';
-//import './HostelDetails/HostelDetails.css';
-import RoomManagement from './RoomManagement/RoomManagement';
-import CreateAccount from './CreateAccount/CreateAccount';
-import CreateAccount2 from './CreateAccount/Createaccout2';
+import { Route, Routes } from 'react-router-dom';
+// import Entry from './components/Entry';
+// import Services from './components/Services';
+// import Ratings from './components/Ratings';
+import Home from './components/Home'
+import Signup from './components/Signup';
+import Login from './components/Login';
+import Details from './components/Details';
+
+
+
+import Hostels from './components/Hostels';
 
 function App() {
-  const [notifications, setNotifications] = useState(['New message', 'Friend request']);
-  
   return (
-//     <Router>
-    <div className="App">
-<<<<<<< HEAD
-      hey
-=======
+    <div className='App'>
       
-         {/* <Switch> */}
-           {}
-              
-           <BrowserRouter>
-            {/* <Link to="/Notifications">Notifications</Link> */}
-           <Routes>
-           <Route path="/" element={ <Homepage/> } />
-           <Route path="/Login" element={<Login/> } />
-           <Route path="/NotificationsPage" 
-                  render={() => <NotificationsPage Notifications={notifications} />}
-            />
-            <Route path="/HostelDetails" element={<HostelDetails />} />
-            <Route path="/RoomManagement" element={<RoomManagement />}/>
-            <Route path="/CreateAccount" element={<CreateAccount />} />
-            <Route path="/CreateAccount2" element={<CreateAccount2 />} />
-           </Routes>
-           </BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Home />}/>
+        <Route path='/hostels' element={< Hostels />}/>
+        <Route path='/signup' element={<Signup />}/>
+        <Route path='/login' element={< Login />}/>
+        <Route path='/details' element={< Details/>}/>
         
-          {/* <Route path="/home"> */}
-             
-           {/* </Route> 
-        // //</Switch>  */}
+      </Routes>
       
->>>>>>> 839b24538b526199ee3f7168782fca8af131c32d
+     
+     
     </div>
-
   );
 }
 
