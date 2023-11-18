@@ -203,6 +203,7 @@ body {
 .main-title {
   display: flex;
   justify-content: space-between;
+  color:rgb(6, 90, 6);
 }
 
 .main-cards {

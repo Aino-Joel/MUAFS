@@ -39,11 +39,11 @@ function Sidebar({openSidebarToggle, OpenSidebar}) {
                     <BsFillGrid3X3GapFill className='icon'/> Categories
                 </a>
             </li> */}
-            <li className='sidebar-list-item'>
+            {/* <li className='sidebar-list-item'>
                 <a href="">
                     <BsPeopleFill className='icon'/> Students
                 </a>
-            </li>
+            </li> */}
             <li className='sidebar-list-item'>
                 <a href="">
                     <BsListCheck className='icon'/> View Hostels

@@ -113,7 +113,7 @@ function Home() {
   return (
     <main className='main-container'>
         <div className='main-title'>
-            <p>Welcome...</p>
+            <h3>Welcome...</h3>
         </div>
 
         <div className='main-cards'>
