@@ -7,11 +7,79 @@ function Details() {
   return (
     <div>
       <Header/>
-      <section className="section"  >
-      <div className="contents">
-      <Link to={'/art'}>Book a Room</Link>
+      <div className="main-banner" id="top">
+  <div className="container-fluid">
+    <div className="row">
+      <div className="col-lg-6">
+        <div className="left-content">
+          <div className="thumb">
+            <div className="inner-content">
+              <div className="main-border-button"></div>
+            </div>
+            <img src="assets/images/baner-right-image-02.jpg" />
+          </div>
+        </div>
       </div>
-    </section>
+      <div className="col-lg-6">
+        <div className="right-content">
+          <div className="row">
+            <div className="col-lg-6">
+              <div className="right-first-image">
+                <div className="thumb">
+                  <div className="inner-content"></div>
+                  <div className="hover-content">
+                    <div className="inner"></div>
+                  </div>
+                  <img src="assets/images/baner-right-image-01.jpg" />
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-6">
+              <div className="right-first-image">
+                <div className="thumb">
+                  <div className="inner-content"></div>
+                  <div className="hover-content">
+                    <div className="inner">
+                      <div className="main-border-button"></div>
+                    </div>
+                  </div>
+                  <img src="assets/images/baner-right-image-02.jpg" />
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-6">
+              <div className="right-first-image">
+                <div className="thumb">
+                  <div className="inner-content"></div>
+                  <div className="hover-content">
+                    <div className="inner">
+                      <div className="main-border-button"></div>
+                    </div>
+                  </div>
+                  <img src="assets/images/baner-right-image-03.jpg" />
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-6">
+              <div className="right-first-image">
+                <div className="thumb">
+                  <div className="inner-content"></div>
+                  <div className="hover-content">
+                    <div className="inner">
+                      <div className="main-border-button"></div>
+                    </div>
+                  </div>
+                  <img src="assets/images/baner-right-image-04.jpg" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
     <div className="container mt-4">
     
     <h4 className="display-6">What the hostel offers</h4>
