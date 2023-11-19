@@ -194,3 +194,44 @@ background-color: black;
 .price a:hover{
  color:rgb(162, 64, 64);
 }
+.description{
+  position: relative;
+  overflow: hidden;
+  padding: 20px 0;
+}
+.description-category{
+  padding: 0 10vw;
+  font-size: 25px;
+  font-weight: 700;
+  margin-top: 15px;
+  margin-bottom:10px ;
+  text-transform: capitalize;
+}
+.description-container{
+  padding: 0 10vw;
+  display: flex;
+  
+}
+#descriptioncontainer{
+  padding: 0 10vw;
+  display: flex;
+  
+}
+.description-header{
+    padding: 0 10vw;
+  display: flex;
+  }
+
+.description-container::-webkit-scrollbar{
+  display: none;
+}
+.heading{
+  padding: 0 10vw;
+  display: flex;
+  font-size: 16px;
+}
+@media screen and (max-width: 768px) {
+  .description-category {
+    font-size: 20px; /* Adjust font size for smaller screens */
+  }
+}
