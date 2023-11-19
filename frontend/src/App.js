@@ -3,9 +3,11 @@ import React from 'react';
 // import { useState } from 'react'
 import './App.css';
 // import Header from './header'
-import Sidebar from './sidebar'
-import Home from './home'
-import Header from './header';
+import Sidebar from './components/sidebar'
+import Home from './components/home'
+import Header from './components/header';
+import FormComponent from './components/register';
+
 
  
    
@@ -25,7 +27,9 @@ function App() {
       <Header />
       <Sidebar />
       <Home />
-      
+      <Routes>
+        <Route path="/register.js" element= {FormComponent} />
+      </Routes>
 
 
     </div>
