@@ -265,3 +265,38 @@ td {
   padding: 0 10vw;
 
 }
+.section {
+  display: flex;
+  height: 300px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-image: url('https://i.pinimg.com/564x/b1/70/b4/b170b4b121c00c47c217e335e5d0944a.jpg');
+  background-size: cover;
+  background-position: center center;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+ 
+}
+
+.contents {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  width: 100%;
+  color: white;
+  margin-inline: auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.contents a {
+  color: inherit;
+  text-decoration: none;
+  background-color:#1d2b26;
+  padding: 12px 24px;
+  font-size: 22px;
+  border-radius: 10px;
+}
+.content a:hover{
+background-color: black;
+}

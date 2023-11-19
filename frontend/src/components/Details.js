@@ -7,8 +7,8 @@ function Details() {
   return (
     <div>
       <Header/>
-      <section className="hero"  >
-      <div className="content">
+      <section className="section"  >
+      <div className="contents">
       <Link to={'/art'}>Book a Room</Link>
       </div>
     </section>
@@ -91,7 +91,7 @@ Original paragraph
             </div>
             <br/>
             <h4 class = "heading">Rooms available</h4>
-           <table>
+           <table className='"table table-striped"'>
            
   <thead>
     <tr>
@@ -101,25 +101,29 @@ Original paragraph
   </thead>
   <tbody>
     <tr>
-      <th scope="row">Buzzcocks</th>
-      <td>1976</td>
-     
+      <td scope="row">Buzzcocks</td>
+      <td>1976</td> 
       
     </tr>
     <tr>
-      <th scope="row">The Clash</th>
+      <td scope="row">The Clash</td>
       <td>1976</td>
       
 </tr>
 
     <tr>
-      <th scope="row">The Stranglers</th>
+      <td scope="row">The Stranglers</td>
       <td>1974</td>
       
     </tr>
   </tbody>
  
            </table>
+            <br/>
+           <h3 className='description-container'>Location</h3>
+           <p className='description-container'>AccessibilityEventsLibrariesMapsDepartmentsConnectCarolinaUNC Search
+Sk
+Original paragraph</p>
             </div>
     </div>
   )
