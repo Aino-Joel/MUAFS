@@ -91,6 +91,35 @@ Original paragraph
             </div>
             <br/>
             <h4 class = "heading">Rooms available</h4>
+           <table>
+           
+  <thead>
+    <tr>
+      <th scope="col">Type of Room</th>
+      <th scope="col">Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Buzzcocks</th>
+      <td>1976</td>
+     
+      
+    </tr>
+    <tr>
+      <th scope="row">The Clash</th>
+      <td>1976</td>
+      
+</tr>
+
+    <tr>
+      <th scope="row">The Stranglers</th>
+      <td>1974</td>
+      
+    </tr>
+  </tbody>
+ 
+           </table>
             </div>
     </div>
   )
