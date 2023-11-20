@@ -7,8 +7,12 @@ import { Routes, Route } from 'react-router-dom';
 import Sidebar from './components/sidebar'
 import Home from './components/home'
 import Header from './components/header';
-import Registration from './components/createaccount';
+import CreateAccount from './components/createaccount';
 import ViewHostels from './hostels';
+import PieChart from './components/analytics';
+import './css/header.css';
+import './css/sidebar.css';
+import './css/home.css';
 // import Register from './components/createaccount';
 //  import ViewHostels from './hostels';
 
@@ -31,24 +35,19 @@ function App() {
 
   return (
     <div className='grid-container'>
-<Home />
+{/* <Home /> */}
+<Sidebar /> 
 <Header />
-<Sidebar />
+{/* <CreateAccount />
+ <PieChart /> */}
 
       <Routes>
-        <Route
-        path='/createaccount'
-        element = {<Registration />}
-        ></Route>
-        <Route 
-        path='/hostels'
-        element = {<ViewHostels />}
+        <Route path='/' element={<Home />} ></Route>
+        <Route path='/hostels' element = {<ViewHostels />}></Route>
+        <Route path='/createaccount'element = {<CreateAccount />} ></Route>
+        <Route path='/hostels' element = {<ViewHostels />}></Route>
+      
         
-        
-        
-        >
-
-        </Route>
       </Routes>
 
 
