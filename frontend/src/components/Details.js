@@ -7,16 +7,16 @@ function Details() {
   return (
     <div>
       <Header/>
+      <br/>
+      <h1 >Nakiyingi Hostel</h1>
       <div className="main-banner" id="top">
   <div className="container-fluid">
     <div className="row">
       <div className="col-lg-6">
         <div className="left-content">
-          <div className="thumb">
-            <div className="inner-content">
-              <div className="main-border-button"></div>
-            </div>
-            <img src="assets/images/baner-right-image-02.jpg" />
+          <div className="thumb"> 
+            <img src="https://media.designcafe.com/wp-content/uploads/2021/04/28110847/middle-class-indian-bedroom-design.jpg" />       
+          
           </div>
         </div>
       </div>
@@ -26,11 +26,9 @@ function Details() {
             <div className="col-lg-6">
               <div className="right-first-image">
                 <div className="thumb">
-                  <div className="inner-content"></div>
-                  <div className="hover-content">
-                    <div className="inner"></div>
-                  </div>
-                  <img src="assets/images/baner-right-image-01.jpg" />
+                  
+                <img src="https://media.designcafe.com/wp-content/uploads/2021/04/28110847/middle-class-indian-bedroom-design.jpg" />       
+          
                 </div>
               </div>
             </div>
@@ -43,7 +41,8 @@ function Details() {
                       <div className="main-border-button"></div>
                     </div>
                   </div>
-                  <img src="assets/images/baner-right-image-02.jpg" />
+                  <img src="https://media.designcafe.com/wp-content/uploads/2021/04/28110847/middle-class-indian-bedroom-design.jpg" />       
+          
                 </div>
               </div>
             </div>
@@ -56,7 +55,8 @@ function Details() {
                       <div className="main-border-button"></div>
                     </div>
                   </div>
-                  <img src="assets/images/baner-right-image-03.jpg" />
+                  <img src="https://media.designcafe.com/wp-content/uploads/2021/04/28110847/middle-class-indian-bedroom-design.jpg" />       
+          
                 </div>
               </div>
             </div>
@@ -69,7 +69,8 @@ function Details() {
                       <div className="main-border-button"></div>
                     </div>
                   </div>
-                  <img src="assets/images/baner-right-image-04.jpg" />
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJM5yILA01s8DSTlHuLHjdEagSUyWWaJAETU_1k8rJJ0ypCMSA_Q0ZY7-Rb3ChhfLEASk&usqp=CAU" />       
+          
                 </div>
               </div>
             </div>
@@ -78,6 +79,9 @@ function Details() {
       </div>
     </div>
   </div>
+  <Link to={'/book'}>
+  <button className='button'>Book a Room</button>
+  </Link>
 </div>
 
     <div className="container mt-4">
