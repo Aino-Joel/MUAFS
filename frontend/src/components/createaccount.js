@@ -6,13 +6,15 @@ function CreateAccount(){
 
   return (
 
-    
+    <div className= "main-container">
   <div className="form-container">
 
 <h2>Create Hostel Account</h2>
 
     <form>
-      <label htmlFor="name">Name:</label>
+      <label htmlFor="name">Hostel Name:</label>
+      <input type="text" id="name" name="name" required="" />
+      <label htmlFor="name">Name of Custodian:</label>
       <input type="text" id="name" name="name" required="" />
       <label htmlFor="email">Email:</label>
       <input type="email" id="email" name="email" required="" />
@@ -22,15 +24,16 @@ function CreateAccount(){
       <select>
     <option>Kikoni</option>
     <option>Kikumi kikumi</option>
-    <option>wandegeya</option>
+    <option>Wandegeya</option>
     <option>Kavule
     </option>
   </select>
       {/* <textarea id="address" name="address" required="" defaultValue={""} /> */}
+      
       <button type="submit">Create Account</button>
     </form>
   </div>
-
+  </div>
 )
 }
 export default CreateAccount

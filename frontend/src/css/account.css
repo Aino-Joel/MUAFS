@@ -1,13 +1,13 @@
-.form-container {
-    max-width: 400px;
+ .form-container {
+    max-width: 800px;
     margin: 0 auto;
   }
-  
-  form {
+   
+   form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-  }
+     gap: 5px; 
+  } 
   
   label {
     display: block;
