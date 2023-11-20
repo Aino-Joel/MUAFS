@@ -8,6 +8,7 @@ import Home from './components/Home'
 import Signup from './components/Signup';
 import Login from './components/Login';
 import Details from './components/Details';
+import Book from './components/Book';
 
 
 
@@ -23,7 +24,7 @@ function App() {
         <Route path='/signup' element={<Signup />}/>
         <Route path='/login' element={< Login />}/>
         <Route path='/details' element={< Details/>}/>
-        
+        <Route path='/book' element={< Book/>}/> 
       </Routes>
       
      
