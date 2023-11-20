@@ -25,26 +25,20 @@ import
         </div>
  <hr/>
          <ul className='sidebar-list'>
-            {/* <li className='sidebar-list-item'>
-                 <a href="">
-                     <BsGrid1X2Fill className='icon'/> 
-                </a>
-             </li> */}
+            
+             
+              <li className='sidebar-list-item'>
+                 <Link to = '/home'>
+                    <BsFillGrid3X3GapFill className='icon'/> Home
+                 </Link>
+             </li>
+
              <li className='sidebar-list-item'>
                  <Link to = '/createaccount'>
                      <BsFillArchiveFill className='icon'/> Create Hostel Account
                   </Link>
               </li>
-             {/* <li className='sidebar-list-item'>
-                 <a href="">
-//                     <BsFillGrid3X3GapFill className='icon'/> Categories
-//                 </a>
-//             </li> */}
-           {/* <li className='sidebar-list-item'>
-//                 <a href="">
-//                     <BsPeopleFill className='icon'/> Students
-//                 </a>
-//             </li> */}
+           
             <li className='sidebar-list-item'>
                 <Link to = '/hostels'>
                     <BsListCheck className='icon'/> View Hostels
