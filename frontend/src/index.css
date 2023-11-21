@@ -70,7 +70,7 @@ button {
 }
 
 .home-page{
-    background-image: url('./Hostel-1.jpg');
+    /* background-image: url('./Hostel-1.jpg'); */
     background-size: 100%;
   text-align: centre;
   margin-top: 50px;

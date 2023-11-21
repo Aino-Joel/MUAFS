@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import Login from "./Login";
-import NotificationsPage from "./Notifications";
+// import Login from "./Login";
+// import NotificationsPage from "./Notifications";
 //import {useLocation} from 'react-router-dom';
 //import {toast} from 'react-toastify';
 import Footer from "../footer";

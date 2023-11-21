@@ -1,21 +1,18 @@
 import React, { useEffect, useState } from "react";
-//import { useHistory } from "react-router-dom";
 
 function Login(){
     const [username, setUsername] = useState('kijjo');
   const [password, setPassword] = useState('COSMAS62');
-  //const history = useHistory()
+  const nav = useHistory()
 
   const handleLogin = () => {
 //     // You can add your login validation logic here
 //     // For simplicity, let's just check if both fields are filled
     if (username && password) {
       alert('Login successful!');
-      //history.push('/')
     } else {
       alert('Please enter both username and password.');
     }
-//     // window.location.href = '/home';
   };
 
     return (
