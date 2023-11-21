@@ -1,0 +1,22 @@
+/* HotelList.css */
+
+.hostel-list-container {
+    margin: 20px;
+  }
+  
+  .hostel-list-table {
+    width: 200%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  .hostel-list-table th, .hostel-list-table td {
+    border: 1px solid #dddd;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .hostel-list-table th {
+    background-color: rgb(148, 229, 90);
+  }
+  

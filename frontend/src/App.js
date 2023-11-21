@@ -8,11 +8,13 @@ import Sidebar from './components/sidebar'
 import Home from './components/home'
 import Header from './components/header';
 import CreateAccount from './components/createaccount';
-import ViewHostels from './hostels';
+import ViewHostels from './components/hostels';
 import PieChart from './components/analytics';
 import './css/header.css';
 import './css/sidebar.css';
 import './css/home.css';
+import './css/account.css';
+import './css/hostels.css'
 // import Register from './components/createaccount';
 //  import ViewHostels from './hostels';
 
@@ -43,6 +45,7 @@ function App() {
 
       <Routes>
         <Route path='/' element={<Home />} ></Route>
+        <Route path='/home' element={<Home />} ></Route>
         <Route path='/hostels' element = {<ViewHostels />}></Route>
         <Route path='/createaccount'element = {<CreateAccount />} ></Route>
         <Route path='/hostels' element = {<ViewHostels />}></Route>
