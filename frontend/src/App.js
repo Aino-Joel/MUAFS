@@ -38,8 +38,8 @@ function App() {
   return (
     <div className='grid-container'>
 {/* <Home /> */}
-<Sidebar /> 
-<Header />
+<Sidebar openSidebarToggle={openSidebarToggle} OpenSidebar={OpenSidebar}/> 
+<Header OpenSidebar={OpenSidebar}/>
 {/* <CreateAccount />
  <PieChart /> */}
 

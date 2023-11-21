@@ -18,6 +18,9 @@ function CreateAccount(){
       <input type="text" id="name" name="name" required="" />
       <label htmlFor="email">Email:</label>
       <input type="email" id="email" name="email" required="" />
+      <label htmlFor="password">Password:</label>
+      <input type="password" id="password" name="password" required="" />
+      
       <label htmlFor="contact">Contact:</label>
       <input type="tel" id="contact" name="contact" required="" />
       <label htmlFor="address">Address:</label>

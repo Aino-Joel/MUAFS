@@ -2,11 +2,12 @@ import React from 'react'
 import 
  {BsFillBellFill, BsFillEnvelopeFill, BsPersonCircle, BsSearch, BsJustify}
  from 'react-icons/bs'
+ import { FaBars } from "react-icons/fa";
 
 
 
 
- function Header(){
+ function Header(OpenSidebar){
   return (
      <header className='header'>
          <div className='menu-icon'>
@@ -17,6 +18,8 @@ import
             <input type="text" className="search-input" placeholder="Search hostels..." />
            
             <BsSearch  className='search_icon' />
+            
+            {/* <FaBars onClick={OpenSidebar}/> */}
             </div>
         </div>
     
