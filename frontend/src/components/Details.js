@@ -2,6 +2,7 @@ import React from 'react'
 import Header from './Header'
 import { Link } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Footer from './Footer';
 
 function Details() {
   return (
@@ -196,7 +197,12 @@ Original paragraph
            <p className='description-container'>AccessibilityEventsLibrariesMapsDepartmentsConnectCarolinaUNC Search
 Sk
 Original paragraph</p>
+<Link to={'/book'}>
+  <button className='buttons'>Get directions</button>
+  </Link>
+
             </div>
+            <Footer/>
     </div>
   )
 }
