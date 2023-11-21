@@ -28,8 +28,8 @@ const Homepage = () => {
   <input type="checkbox" id="menu-toggle" />
   <div className="sidebar">
     <div className="side-header">
-      <h3>
-        M<span>UAFS</span>
+      <h3><span><img src="https://th.bing.com/th/id/OIP.zb1yPttTJ9gY7EDFaKRuwwHaGA?rs=1&pid=ImgDetMain" height="40px" width="40px" /></span>
+       M<span>UAFS</span>
       </h3>
     </div>
     <div className="side-content">
