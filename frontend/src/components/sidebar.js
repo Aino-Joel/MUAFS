@@ -5,6 +5,9 @@ import
 {BsCart3, BsGrid1X2Fill, BsFillArchiveFill, BsFillGrid3X3GapFill, BsPeopleFill, 
   BsListCheck, BsMenuButtonWideFill, BsFillGearFill}
  from 'react-icons/bs'
+ import { HiHome } from "react-icons/hi2"
+ import { IoLogOut } from "react-icons/io5";
+ import { IoPersonAdd } from "react-icons/io5";
 
  function Sidebar({openSidebarToggle, OpenSidebar}) {
 
@@ -29,13 +32,13 @@ import
              
               <li className='sidebar-list-item'>
                  <Link to = '/home'>
-                    <BsFillGrid3X3GapFill className='icon'/> Home
+                    <HiHome className='icon'/> Home
                  </Link>
              </li>
 
              <li className='sidebar-list-item'>
                  <Link to = '/createaccount'>
-                     <BsFillArchiveFill className='icon'/> Create Hostel Account
+                     <IoPersonAdd className='icon'/> Create Hostel Account
                   </Link>
               </li>
            
@@ -52,7 +55,7 @@ import
             </li>
             <li className='sidebar-list-item'>
                 <Link to = '/logout'>
-                    <BsFillGearFill className='icon'/> Log out
+                    <IoLogOut className='icon'/> Log out
                 </Link>
             </li>
         </ul>
