@@ -1,27 +1,30 @@
 import React, { useState } from 'react';
-// import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
-// import './App.css';
 import Homepage from './pages/Homepage';
 import Login from './pages/login';
 import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
-// import NotificationsPage from './Notifications';
-// import notifications from './Notifications';
-// import HostelDetails from './HostelDetails/HostelDetails';
-//import './HostelDetails/HostelDetails.css';
 import RoomManagement from './RoomManagement/RoomManagement';
 import CreateAccount from './pages/CreateAccount';
 import CreateAccount2 from './pages/CreateAccount2';
+// import logo from './logo.svg';
+import './App.css';
+// import { Route, Routes } from 'react-router-dom';
+// import Entry from './components/Entry';
+// import Services from './components/Services';
+// import Ratings from './components/Ratings';
+import Home from './components/Home'
+import Signup from './components/Signup';
+import Login from './components/Login';
+import Details from './components/Details';
+import Book from './components/Book';
+
+
+
+import Hostels from './components/Hostels';
 
 function App() {
-  const [notifications, setNotifications] = useState(['New message', 'Friend request']);
-  
   return (
-//     <Router>
-    <div className="App">
-      
-         {/* <Switch> */}
-           {}
-              
+    <div className='App'>
+
            <BrowserRouter>
             {/* <Link to="/Notifications">Notifications</Link> */}
            <Routes>
@@ -41,9 +44,18 @@ function App() {
              
            {/* </Route> 
         // //</Switch>  */}
+      <Routes>
+        <Route path='/' element={<Home />}/>
+        <Route path='/hostels' element={< Hostels />}/>
+        <Route path='/signup' element={<Signup />}/>
+        <Route path='/login' element={< Login />}/>
+        <Route path='/details' element={< Details/>}/>
+        <Route path='/book' element={< Book/>}/> 
+      </Routes>
       
+     
+     
     </div>
-
   );
 }
 
