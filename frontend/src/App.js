@@ -16,6 +16,7 @@ import Book from "./components/Book";
 import Hostels from "./components/Hostels";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Home2 from "./components/Home2";
 
 function App() {
   return (
@@ -33,7 +34,7 @@ function App() {
         <Route path="/CreateAccount" element={<CreateAccount />} />
         <Route path="/CreateAccount2" element={<CreateAccount2 />} />
 
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home2 />} />
         <Route path="/hostels" element={<Hostels />} />
         <Route path="/details" element={<Details />} />
         <Route path="/book" element={<Book />} />
