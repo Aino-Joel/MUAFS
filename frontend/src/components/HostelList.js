@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const HostelList = ({ hostel }) => {
   return (
     <div class="product-card">
@@ -11,9 +13,9 @@ const HostelList = ({ hostel }) => {
       <div class="product-info">
         <br />
         <h2 class="product-brand">
-          {/* <Link to={"/details"}> */}
+          <Link to={"/details"}>
             {hostel.name}, {hostel.location}
-          {/* </Link> */}
+          </Link>
         </h2>
 
         <span class="actual-price">

@@ -1,5 +1,5 @@
 import React from "react";
-import Homepage from "./pages/Homepage";
+import CustodianDashboard from "./pages/CustodianDashboard";
 import Login from "./pages/login";
 import { Route, Routes } from "react-router-dom";
 // import RoomManagement from './RoomManagement/RoomManagement';
@@ -24,7 +24,7 @@ function App() {
       <Header />
 
       <Routes>
-        <Route path="/admin" element={<Homepage />} />
+        <Route path="/admin" element={<CustodianDashboard />} />
         <Route path="/Login" element={<Login />} />
         {/* <Route path="/NotificationsPage" 
               render={() => <NotificationsPage Notifications={notifications} />}

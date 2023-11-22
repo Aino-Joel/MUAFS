@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 //import {useLocation} from 'react-router-dom';
 //import {toast} from 'react-toastify';
 
-const Homepage = () => {
+const CustodianDashboard = () => {
   //const location = useLocation();
 
   // useEffect(() => {
@@ -24,14 +24,14 @@ const Homepage = () => {
         <div className="sidebar">
           <div className="side-header">
             <h3>
-              <span>
+              {/* <span>
                 <img
                   src="https://th.bing.com/th/id/OIP.zb1yPttTJ9gY7EDFaKRuwwHaGA?rs=1&pid=ImgDetMain"
                   height="40px"
                   width="40px"
                 />
-              </span>
-              M<span>UAFS</span>
+              </span> */}
+              <span>MUAFS</span>
             </h3>
           </div>
           <div className="side-content">
@@ -86,7 +86,7 @@ const Homepage = () => {
           </div>
         </div>
         <div className="main-content">
-          <header>
+          {/* <header>
             <div className="header-content">
               <label htmlFor="menu-toggle">
                 <span className="las la-bars" />
@@ -117,7 +117,7 @@ const Homepage = () => {
                 </div>
               </div>
             </div>
-          </header>
+          </header> */}
           <main>
             <div className="page-header">
               <h1>CUSTODIAN</h1>
@@ -183,4 +183,4 @@ const Homepage = () => {
   );
 };
 
-export default Homepage;
+export default CustodianDashboard;
