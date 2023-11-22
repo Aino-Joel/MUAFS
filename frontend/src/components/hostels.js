@@ -1,19 +1,6 @@
 import React from "react";
 
 
-// function ViewHostels()
-
-
-    
-
-
-
-
-
-// HotelList.jsx
-
-// import React from 'react';
-// import './HotelList.css';
 
 const ViewHostels = () => {
   const hostels = [
@@ -48,7 +35,7 @@ const ViewHostels = () => {
   );
 };
 
-// export default HotelList;
+
 
 
  export default ViewHostels
