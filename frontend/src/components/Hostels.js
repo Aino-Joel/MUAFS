@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from './Header'
 import { Link } from "react-router-dom";
+import Footer from './Footer';
 
 
 
@@ -9,6 +10,7 @@ function Hostels() {
     <div>
         <Header />
         hostels
+        <Footer/>
     </div>
   )
 }
