@@ -1,12 +1,10 @@
 
 import React, { useState } from 'react';
-import Header from './Header'
 
 function Book() {
  
   return (
     <div>
-        <Header/>
       <h2>Boook a Room</h2>
       <form >
         <div>

@@ -1,13 +1,12 @@
 import React from 'react'
-import Header from './Header'
+
 import { Link } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Footer from './Footer';
+
 
 function Details() {
   return (
     <div>
-      <Header/>
       <br/>
       <h1 >Nakiyingi Hostel</h1>
       <div className="main-banner" id="top">
@@ -202,7 +201,6 @@ Original paragraph</p>
   </Link>
 
             </div>
-            <Footer/>
     </div>
   )
 }
