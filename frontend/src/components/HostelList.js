@@ -12,7 +12,7 @@ const HostelList = ({ hostel }) => {
         <br />
         <h2 class="product-brand">
           {/* <Link to={"/details"}> */}
-            {hostel.title},{hostel.location}
+            {hostel.name}, {hostel.location}
           {/* </Link> */}
         </h2>
 

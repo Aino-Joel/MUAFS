@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Homepage from "./pages/Homepage";
 import Login from "./pages/login";
 import { Route, Routes } from "react-router-dom";
@@ -16,7 +16,7 @@ import Book from "./components/Book";
 import Hostels from "./components/Hostels";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Home2 from "./components/Home2";
+// import Home2 from "./components/Home2";
 
 function App() {
   return (
@@ -34,7 +34,7 @@ function App() {
         <Route path="/CreateAccount" element={<CreateAccount />} />
         <Route path="/CreateAccount2" element={<CreateAccount2 />} />
 
-        <Route path="/" element={<Home2 />} />
+        <Route path="/" element={<Home />} />
         <Route path="/hostels" element={<Hostels />} />
         <Route path="/details" element={<Details />} />
         <Route path="/book" element={<Book />} />
