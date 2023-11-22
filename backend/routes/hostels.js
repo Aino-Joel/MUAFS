@@ -1,7 +1,8 @@
 const express = require('express')
 const {
     getHostels,
-    getHostel
+    getHostel,
+    createHostel
 } = require('../controllers/hostelController')
 
 const router = express.Router()
@@ -11,5 +12,8 @@ router.get('/', getHostels)
 
 //GET single hostel
 router.get('/:id', getHostel)
+
+//POST Hostel
+router.post('/', createHostel)
 
 module.exports = router

@@ -7,6 +7,10 @@ const hostelSchema = new Schema({
         type: String,
         required: true
     },
+    location: {
+        type: String,
+        required: true
+    },
     custodian: {
         type: String,
         required: true
