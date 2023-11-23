@@ -1,0 +1,41 @@
+/* dean creating hostel accounts css */
+
+.form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    color: rgb(6, 107, 6);
+  }
+   
+   form {
+    display: flex;
+    flex-direction: column;
+     gap: 5px; 
+  } 
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input,
+  textarea, select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  /* h2{
+    align: center;
+  } */
+  
