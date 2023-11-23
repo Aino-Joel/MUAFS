@@ -1,36 +1,47 @@
-// import logo from './logo.svg';
+import React, {useState} from 'react';
 import './App.css';
-import { Route, Routes } from 'react-router-dom';
-// import Entry from './components/Entry';
-// import Services from './components/Services';
-// import Ratings from './components/Ratings';
-import Home from './components/Home'
-import Signup from './components/Signup';
-import Login from './components/Login';
-import Details from './components/Details';
-import Book from './components/Book';
+import { Routes, Route } from 'react-router-dom';
+import Sidebar from './components/sidebar'
+import Home from './components/home-dean'
+import Header from './components/header-dean';
+import CreateAccount from './components/createaccount';
+import ViewHostels from './components/hostels-dean';
+import './css/header.css';
+import './css/sidebar.css';
+import './css/home.css';
+import './css/account.css';
+import './css/hostels.css'
 
 
 
-import Hostels from './components/Hostels';
-
+   
 function App() {
+  
   return (
-    <div className='App'>
-      
+    <div className='grid-container'>
+
+
+<Header />
+<Sidebar /> 
+
+
+
       <Routes>
-        <Route path='/' element={<Home />}/>
-        <Route path='/hostels' element={< Hostels />}/>
-        <Route path='/signup' element={<Signup />}/>
-        <Route path='/login' element={< Login />}/>
-        <Route path='/details' element={< Details/>}/>
-        <Route path='/book' element={< Book/>}/> 
-      </Routes>
+        <Route path='/' element={<Home />} ></Route>
+        <Route path='/home' element={<Home />} ></Route>
+        <Route path='/hostels' element = {<ViewHostels />}></Route>
+        <Route path='/createaccount'element = {<CreateAccount />} ></Route>
+        <Route path='/hostels' element = {<ViewHostels />}></Route>
       
-     
-     
+        
+      </Routes>
+  
     </div>
   );
 }
 
-export default App;
+export default App
+  
+
+
+
