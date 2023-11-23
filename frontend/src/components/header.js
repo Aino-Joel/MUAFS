@@ -1,35 +1,21 @@
-import React from 'react'
-import {BsPersonCircle, BsSearch, BsJustify} from 'react-icons/bs'
- 
+import { Link } from "react-router-dom";
 
-
- function Header(openSidebar){
+function Header() {
   return (
-     <header className='header'>
-         <div className='menu-icon'>
-             <BsJustify className='icon' onClick={openSidebar}/>
-         </div>
-        <div className='header-left'>
-          <div className='search-container' placeholder = 'search hostels'>
-            <input type="text" className="search-input" placeholder="Search hostels..." />
-           
-            <BsSearch  className='search_icon' />
-            
-           
-            </div>
-        </div>
-    
+    <div className="Header">
+      <br />
+      <img
+        src="https://sph.mak.ac.ug/sites/default/files/inline-images/WEB%20Mak-3.png"
+        class="img"
+        alt=""
+      />
 
-        <div className='header-right'>
-             
-             <BsPersonCircle className='icon'/> The dean
-            
-        </div>  
-        </header>
- )
-
+      <Link to={"/"}>Home</Link>
+      <Link to={"/hostels"}>Hostels</Link>
+      <Link to={"/login"}>Login</Link>
+      <Link to={"/signup"}>Sign Up</Link>
+    </div>
+  );
 }
-      
 
-export default Header
-
+export default Header;
