@@ -25,7 +25,7 @@ import CreateAccount from "./components/createaccount";
 import ViewHostels from "./components/hostels-dean";
 import "./css/header.css";
 import "./css/sidebar.css";
-import "./css/home.css";
+// import "./css/home.css";
 import "./css/account.css";
 import "./css/hostels.css";
 

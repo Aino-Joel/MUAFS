@@ -1,42 +1,37 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import { useLogin } from "../hooks/useLogin";
 
-function Login(){
-    const [username, setUsername] = useState('kijjo');
-  const [password, setPassword] = useState('COSMAS62');
+const Login = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const { login, error, isLoading } = useLogin();
 
-  const handleLogin = () => {
-//     // You can add your login validation logic here
-//     // For simplicity, let's just check if both fields are filled
-    if (username && password) {
-      alert('Login successful!');
-    } else {
-      alert('Please enter both username and password.');
-    }
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    await login(email, password);
   };
 
-    return (
-        <div className="login-container">
-        <h2>Login</h2>
-        <form>
-          <input
-            type="text"
-            placeholder="Username"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
-            required
-          />
-          <input
-            type="password"
-            placeholder="Password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            required
-          />
-          <button type="button" onClick={handleLogin}>
-            Login
-          </button>
-        </form>
-      </div>
-    )
-}
-export default Login
+  return (
+    <div className="login-container">
+      <h2>Login</h2>
+      <form onSubmit={handleSubmit}>
+        <input
+          type="text"
+          placeholder="Username"
+          value={username}
+          onChange={(e) => setUsername(e.target.value)}
+        />
+        <input
+          type="password"
+          placeholder="Password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+        />
+        <button disabled={isLoading}>Login</button>
+        {error && <div className="error">{error}</div>}
+      </form>
+    </div>
+  );
+};
+export default Login;
