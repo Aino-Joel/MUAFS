@@ -1,42 +1,133 @@
-/* .App {
+
+/* login css*/
+.Login-card {
+  background-image: url("./hostel2.jpg");
+  /* background-size: cover; */
+  animation: wave-animation 5s infinite linear;
+  display:flex;
+  
+  
+  justify-content: center; 
+  align-items: center;
+  height: 100vh;
+  width: 200dvh;
+}
+@keyframes wave-animation {
+  0% {
+      background-position: 0 0;
+  }
+  100% {
+      background-position: 100% 0;
+  }
+}
+
+.Login-container {
+  opacity: 0.85;
+  background-color: #90909e;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 400px;
+}
+
+.login-card2 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card-image img {
+  width: 100px; /* Adjust image size */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.login-page {
+  text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h1 {
+  color: #0c1013;
+  text-align: center;
+}
+.forgot{
+  color:#05182c;
+}
+p2 {
+  
+  color: #220f0f;
+}
+
+.input-fields {
+  margin-top: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.checkboxes {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  /* margin-bottom: 20px; */
+}
+
+.checkboxes label {
+  display: flex;
+  /* align-items: center; */
+}
+
+.checkboxes input {
+  margin-right: 0;
+}
+
+.login-button {
+  background-color: #007bff; 
+  color: #fff;
+  padding: 10px 160px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.login-button:hover {
+  background-color: #0056b3; /* Darker color on hover */
+}
+
+.already-have-account {
+  margin-top: 20px;
+  color: #666;
+}
+
+.already-have-account a {
+  color: #007bff; /* Link color */
+  text-decoration: none;
+}
+
+.divider {
+  margin: 20px 0;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.divider hr {
+  flex-grow: 1;
+  height: 1px;
+  background-color: #ddd;
+  border: none;
+  margin: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
-
+.divider span {
+  margin: 0 10px;
+  color: #666;
+} 
+.api-options {
+  margin-top: 20px;
+}
 .App {
   display: flex;
   justify-content: center;
@@ -68,7 +159,7 @@ button {
   border-radius: 4px;
   cursor: pointer;
 }
-
+/* homepage css*/
 .home-page{
     background-image: url('./Hostel-1.jpg');
     background-size: 100%;
@@ -634,14 +725,12 @@ table tbody tr {
   text-decoration: underline;
 }
 /* CreateAccount.css */
-
 .create-account-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-  }
-  
+  }  
   .create-account-card {
     width: 400px;
     background-color: #085a0e;

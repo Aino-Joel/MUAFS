@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import Login from "./Login";
+import Login from "./login";
 import NotificationsPage from "./Notifications";
 //import {useLocation} from 'react-router-dom';
 //import {toast} from 'react-toastify';
