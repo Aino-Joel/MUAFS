@@ -5,6 +5,7 @@ import { Route, Routes } from "react-router-dom";
 // import RoomManagement from './RoomManagement/RoomManagement';
 import CreateAccount from "./pages/CreateAccount";
 import CreateAccount2 from "./pages/CreateAccount2";
+import HostelDetails from './pages/hostelDetails'
 // import logo from './logo.svg';
 import "./App.css";
 // import Entry from './components/Entry';
@@ -28,8 +29,8 @@ function App() {
         <Route path="/Login" element={<Login />} />
         {/* <Route path="/NotificationsPage" 
               render={() => <NotificationsPage Notifications={notifications} />}
-            />
-        <Route path="/HostelDetails" element={<HostelDetails />} /> */}
+            /> */}
+        <Route path="/HostelDetails" element={<HostelDetails />} />
         {/* <Route path="/RoomManagement" element={<RoomManagement />}/> */}
         <Route path="/CreateAccount" element={<CreateAccount />} />
         <Route path="/CreateAccount2" element={<CreateAccount2 />} />

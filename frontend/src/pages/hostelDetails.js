@@ -1,6 +1,6 @@
-import React, { usestate } from "react";
-import olympia from './olympia.jpg'
-import './HostelDetails.css';
+import React, { useState } from "react";
+// import olympia from './olympia.jpg'
+// import './HostelDetails.css';
 
 const HostelDetails = () => {
   const [hostelInfo, setHostelInfo] = useState({
