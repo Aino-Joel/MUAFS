@@ -1,11 +1,18 @@
-import { useState } from 'react'
+// Desc: This is the main app component
 import './App.css'
+import {Route, Routes} from 'react-router-dom';
+import IndexPage from "./pages/IndexPage.jsx";
+import LoginPage from "./pages/LoginPage";
+import Layout from './Layout.jsx';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <div>welcome</div>
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<IndexPage />} />
+        <Route path="/login" element={<LoginPage />} />
+      </Route>
+    </Routes>
   )
 }
 
