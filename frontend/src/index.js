@@ -1,14 +1,20 @@
-import React from 'react';
-import {BrowserRouter} from 'react-router-dom';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import { BrowserRouter } from "react-router-dom";
+import { HostelsContextProvider } from "./context/HostelContext";
+import { AuthContextProvider } from "./context/AuthContext";
 
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <AuthContextProvider>
+      <HostelsContextProvider>
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>
+      </HostelsContextProvider>
+    </AuthContextProvider>
   </React.StrictMode>
 );
-

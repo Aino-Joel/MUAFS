@@ -1,54 +1,120 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
-import { BsFillArchiveFill } from 'react-icons/bs'
- import { FaMapMarkerAlt } from "react-icons/fa"
- import { MdStarRate } from "react-icons/md";
- import 
- { BarChart, Bar,  
-  Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, LineChart, Line } from 'recharts'
- 
-  
+import { useEffect } from "react";
+import { Link } from "react-router-dom";
+import HostelList from "./HostelList";
+import { useHostelsContext } from '../hooks/useHostelsContext'
 
 function Home() {
+  const {hostels, dispatch} = useHostelsContext()
+
+  useEffect(() => {
+    const fetchHostels = async () => {
+      const response = await fetch('/api/hostels')
+      const json = await response.json()
+
+      if(!response.ok){
+          console.log('Error')
+      }
+
+      if(response.ok){
+          dispatch({type: 'SET_HOSTELS', payload: json})
+      }
+    }  
+
+  fetchHostels()
+    
+  }, [dispatch])
+    
   return (
-    <main className='main-container'>
-        <div className='main-title'>
-            <h3>Welcome...</h3>
+    <div>
+      <section className="hero">
+        <div className="content">
+          <h1>CampusCrib</h1>
+          <p> Trust us to get you a home away from home</p>
+          <Link to={"/hostels"}>Start Now</Link>
         </div>
-
-        <div className='main-cards'>
-            <div className='card'>
-                <div className='card-inner'>
-                    <h3>POPULAR</h3>
-                    <BsFillArchiveFill className='card_icon'/>
-                </div>
-                <Link to = '/dreamworld'>
-                <h2>DREAM WORLD</h2>
-                </Link>
-            </div>
-            <div className='card'>
-                <div className='card-inner'>
-                    <h3>PREFERRRED LOCATION</h3>
-                    <FaMapMarkerAlt className='card_icon'/>
-                </div>
-                <Link to = '/kikoni A'>
-                <h2>KIKONI A</h2>
-                </Link>
-            </div>
-            
-            <div className='card'>
-                <div className='card-inner'>
-                    <h3>HIGHLY RATED</h3>
-                    <MdStarRate  className='card_icon'/>
-                </div>
-                <Link to = '/NANA'>
-                <h2>NANA HOSTEL</h2>
-                </Link>
-            </div>
+      </section>
+      <div className="product">
+        <h2 class="product-category">Recommended for you</h2>
+        <div class="product-container">
+          {hostels && hostels.map((hostel) => (
+            <HostelList key={hostel._id} hostel={hostel} />
+          ))}
         </div>
-   
-    </main>
-  )
- } 
+      </div>
+      
+      <div className="product">
+        <h2 className="product-category">
+          Popular Residences <tr />
+        </h2>
+        <span className="price">
+          <Link to={"/hostels"}>View all hostels</Link>
+        </span>
+        <br />
+        <div className="product-container">
+          <div className="product-card">
+            <div className="product-image">
+              <img
+                src="./pictures/room1.jpg"
+                className="product-thumb"
+                alt=""
+              />
+            </div>
+            <div className="product-info">
+              <h2 className="product-brand">Olympia Hostel, Kikoni</h2>
+            </div>
+          </div>
+          <div className="product-card">
+            <div className="product-image">
+              <img
+                src="./pictures/room1.jpg"
+                className="product-thumb"
+                alt=""
+              />
+            </div>
+            <div className="product-info">
+              <h2 className="product-brand">Julianna Girls' Hostel, Kikoni</h2>
+            </div>
+          </div>
+          <div className="product-card">
+            <div className="product-image">
+              <img
+                src="./pictures/room1.jpg"
+                className="product-thumb"
+                alt=""
+              />
+            </div>
+            <div className="product-info">
+              <h2 className="product-brand">Aryan Hostel, Wandegeya</h2>
+            </div>
+          </div>
+          <div className="product-card">
+            <div className="product-image">
+              <img
+                src="./pictures/room1.jpg"
+                className="product-thumb"
+                alt=""
+              />
+            </div>
+            <div className="product-info">
+              <h2 className="product-brand">Muhika Hostel, Kikoni</h2>
+            </div>
+          </div>
+          <div className="product-card">
+            <div className="product-image">
+              <img
+                src="./pictures/room1.jpg"
+                className="product-thumb"
+                alt=""
+              />
+            </div>
+            <div className="product-info">
+              <h2 className="product-brand">Baskon Hostel, Kikoni</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
 
- export default Home
+export default Home;
