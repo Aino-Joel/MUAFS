@@ -9,6 +9,7 @@ import Signup from './components/Signup';
 import Login from './components/Login';
 import Details from './components/Details';
 import Book from './components/Book';
+import Maps from './components/Maps';
 
 
 
@@ -25,6 +26,7 @@ function App() {
         <Route path='/login' element={< Login />}/>
         <Route path='/details' element={< Details/>}/>
         <Route path='/book' element={< Book/>}/> 
+        <Route path='/maps' element={< Maps/>}/> 
       </Routes>
       
      
