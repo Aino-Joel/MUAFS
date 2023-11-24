@@ -5,6 +5,7 @@ import NotificationsPage from "./Notifications";
 //import {useLocation} from 'react-router-dom';
 //import {toast} from 'react-toastify';
 import Footer from "../footer";
+import HostelDetails from "./HostelDetails/HostelDetails";
 
 const Homepage = () => {
     //const location = useLocation();
@@ -62,17 +63,11 @@ const Homepage = () => {
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="./HostelDetails">
               <span className="las la-clipboard-list" />
-              <small>VIEWS</small>
+              <small>Hostel Detals</small>
             </a>
-          </li>
-          <li>
-            <a href="">
-              <span className="las la-shopping-cart" />
-              <small>PAYMENTS</small>
-            </a>
-          </li>
+          </li>          
           <li>
             <a href="">
               <span className="las la-tasks" />
