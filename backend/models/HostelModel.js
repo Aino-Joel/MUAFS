@@ -19,25 +19,29 @@ const hostelSchema = new Schema(
     rooms: {
       type: Number,
       required: true,
+    },
+    amenities: {
+      type: String,
+      required: true
     }
-//     roomType: [
-//       {
-//         type: String,
-//         required: true,
-//       },
-//     ],
-//     price: [
-//       {
-//         type: Number,
-//         required: true,
-//       },
-//     ],
-//     numberOfRoomsAvailable: [
-//       {
-//         type: Number,
-//         required: true,
-//       },
-//     ],
+    // roomType: [
+    //   {
+    //     type: String,
+    //     required: true,
+    //   },
+    // ],
+    // price: [
+    //   {
+    //     type: Number,
+    //     required: true,
+    //   },
+    // ],
+    // numberOfRoomsAvailable: [
+    //   {
+    //     type: Number,
+    //     required: true,
+    //   },
+    // ],
   },
   { timestamps: true }
 );

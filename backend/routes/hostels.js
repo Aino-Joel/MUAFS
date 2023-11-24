@@ -11,7 +11,7 @@ const router = express.Router()
 router.get('/', getHostels)
 
 //GET single hostel
-router.get('/:id', getHostel)
+router.get('/:_id', getHostel)
 
 //POST Hostel
 router.post('/', createHostel)

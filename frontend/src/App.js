@@ -12,7 +12,7 @@ import "./App.css";
 // import Services from './components/Services';
 // import Ratings from './components/Ratings';
 import Home from "./components/Home";
-import Details from "./components/Details";
+import Details from "./components/Details2";
 import Book from "./components/Book";
 // import Hostels from "./components/Hostels";
 import Header from "./components/Header";
@@ -50,7 +50,7 @@ function App() {
 
           <Route path="/" element={<Home />} />
           {/* <Route path="/hostels" element={<Hostels />} /> */}
-          <Route path="/details" element={<Details />} />
+          <Route path="/:_id" element={<Details />} />
           <Route path="/book" element={<Book />} />
 
           {/* <Route path='/' element={<Home />} ></Route> */}

@@ -15,7 +15,7 @@ function Header() {
       <br />
       <img
         src="https://sph.mak.ac.ug/sites/default/files/inline-images/WEB%20Mak-3.png"
-        class="img"
+        className="img"
         alt=""
       />
 
@@ -23,7 +23,7 @@ function Header() {
       <Link to={"/hostels"}>Hostels</Link>
       {user && (
         <div>
-          <span>{user.email}</span>
+          <span>{user.username}</span>
           <button onClick={handleClick}>Logout</button>
         </div>
       )}

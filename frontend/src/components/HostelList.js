@@ -2,29 +2,29 @@ import { Link } from "react-router-dom";
 
 const HostelList = ({ hostel }) => {
   return (
-    <div class="product-card">
-      <div class="product-image">
+    <div className="product-card">
+      <div className="product-image">
         <img
           src="https://media.designcafe.com/wp-content/uploads/2021/04/28110847/middle-class-indian-bedroom-design.jpg"
-          class="product-thumb"
+          className="product-thumb"
           alt=""
         />
       </div>
-      <div class="product-info">
+      <div className="product-info">
         <br />
-        <h2 class="product-brand">
-          <Link to={"/details"}>
+        <h2 className="product-brand">
+          <Link to={`/${hostel._id}`}>
             {hostel.name}, {hostel.location}
           </Link>
         </h2>
 
-        <span class="actual-price">
+        <span className="actual-price">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
             height="12"
             fill="currentColor"
-            class="bi bi-star-fill"
+            className="bi bi-star-fill"
             viewBox="0 0 16 16"
           >
             <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
@@ -34,7 +34,7 @@ const HostelList = ({ hostel }) => {
             width="16"
             height="12"
             fill="currentColor"
-            class="bi bi-star-fill"
+            className="bi bi-star-fill"
             viewBox="0 0 16 16"
           >
             <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
@@ -44,7 +44,7 @@ const HostelList = ({ hostel }) => {
             width="16"
             height="12"
             fill="currentColor"
-            class="bi bi-star-fill"
+            className="bi bi-star-fill"
             viewBox="0 0 16 16"
           >
             <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
@@ -54,7 +54,7 @@ const HostelList = ({ hostel }) => {
             width="16"
             height="12"
             fill="currentColor"
-            class="bi bi-star-fill"
+            className="bi bi-star-fill"
             viewBox="0 0 16 16"
           >
             <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
@@ -64,7 +64,7 @@ const HostelList = ({ hostel }) => {
             width="16"
             height="12"
             fill="currentColor"
-            class="bi bi-star-half"
+            className="bi bi-star-half"
             viewBox="0 0 16 16"
           >
             <path

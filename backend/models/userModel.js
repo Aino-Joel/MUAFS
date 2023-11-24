@@ -18,6 +18,14 @@ const userSchema = new Schema({
     required: true,
     unique: true,
   },
+  status: {
+    type: String,
+    required: true,
+  },
+  hostelIncharge: {
+    type: String,
+    unique: true,
+  },
   regNo: {
     type: String,
     required: false,
@@ -35,10 +43,12 @@ userSchema.statics.signup = async function (
   lName,
   email,
   regNo,
-  password
+  password,
+  status,
+  hostelIncharge
 ) {
   //validation
-  if (!fName || !lName || !email || !password) {
+  if (!fName || !lName || !email || !password || !status) {
     throw Error("All fields should be filled");
   }
   if (!validator.isEmail(email)) {
@@ -46,6 +56,9 @@ userSchema.statics.signup = async function (
   }
   if (!validator.isStrongPassword(password)) {
     throw Error("Passsword is not strong enough");
+  }
+  if(status !== 'student' || status !== 'student' ){
+    throw Error("Can either be a student or custodian");
   }
 
   //check if email or regNo exists
@@ -71,6 +84,8 @@ userSchema.statics.signup = async function (
     email,
     regNo,
     password: hash,
+    status,
+    hostelIncharge
   });
 
   return user;

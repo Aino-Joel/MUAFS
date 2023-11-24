@@ -1,10 +1,9 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import HostelList from "./HostelList";
-import { useHostelsContext } from '../hooks/useHostelsContext'
 
 function Home() {
-  const {hostels, dispatch} = useHostelsContext()
+  const [hostels, setHostels] = useState(null)
 
   useEffect(() => {
     const fetchHostels = async () => {
@@ -16,13 +15,13 @@ function Home() {
       }
 
       if(response.ok){
-          dispatch({type: 'SET_HOSTELS', payload: json})
+        setHostels(json)
       }
     }  
 
   fetchHostels()
     
-  }, [dispatch])
+  }, [])
     
   return (
     <div>
@@ -34,8 +33,8 @@ function Home() {
         </div>
       </section>
       <div className="product">
-        <h2 class="product-category">Recommended for you</h2>
-        <div class="product-container">
+        <h2 className="product-category">Recommended for you</h2>
+        <div className="product-container">
           {hostels && hostels.map((hostel) => (
             <HostelList key={hostel._id} hostel={hostel} />
           ))}

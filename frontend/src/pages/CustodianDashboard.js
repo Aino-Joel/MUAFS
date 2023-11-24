@@ -57,7 +57,7 @@ const CustodianDashboard = () => {
                     <small>Profile</small>
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <a href="./NotificationsPage">
                     <span className="las la-envelope" />
                     <small>Notifications</small>
@@ -68,19 +68,19 @@ const CustodianDashboard = () => {
                     <span className="las la-clipboard-list" />
                     <small>VIEWS</small>
                   </a>
-                </li>
+                </li> */}
                 <li>
                   <a href="">
                     <span className="las la-shopping-cart" />
-                    <small>PAYMENTS</small>
+                    <small>BOOKINGS</small>
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <a href="">
                     <span className="las la-tasks" />
                     <small>Tasks</small>
                   </a>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>
