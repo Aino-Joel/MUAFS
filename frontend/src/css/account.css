@@ -4,6 +4,7 @@
     max-width: 800px;
     margin: 0 auto;
     color: rgb(6, 107, 6);
+    
   }
    
    form {
@@ -14,7 +15,7 @@
   
   label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 3px;
   }
   
   input,
@@ -35,7 +36,7 @@
   button:hover {
     background-color: #45a049;
   }
-  /* h2{
-    align: center;
-  } */
+   h2{
+    align-items: center;
+  } 
   

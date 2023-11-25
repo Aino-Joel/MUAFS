@@ -28,7 +28,7 @@ import {BsPersonCircle, BsSearch, BsJustify} from 'react-icons/bs'
 
         <div className='header-right'>
              
-             <BsPersonCircle className='icon'/> The dean
+             <BsPersonCircle className='icon'/> The Dean
             
         </div>  
         </header>

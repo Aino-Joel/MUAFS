@@ -255,7 +255,8 @@ button {
 }
 
 header {
-    position: fixed;
+    position: relatve;
+     /* changed position from fixed to relative and my code restored */
     right: 0;
     top: 0;
     left: 165px;

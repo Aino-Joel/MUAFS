@@ -1,7 +1,7 @@
 /* dean header css */
 
 .deanheader {
-    grid-area: deanheader;
+    grid-area: header;
     height: 60px;
     display: flex;
     align-items: center;

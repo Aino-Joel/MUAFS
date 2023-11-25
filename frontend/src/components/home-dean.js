@@ -15,7 +15,7 @@ function Home() {
         <div className='main-title'>
             <h3>Welcome...</h3>
         </div>
-
+<br />
         <div className='main-cards'>
             <div className='card'>
                 <div className='card-inner'>
