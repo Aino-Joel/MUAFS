@@ -1,11 +1,17 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {BsPersonCircle, BsSearch, BsJustify} from 'react-icons/bs'
  
 
 
- function Header(openSidebar){
+ function Header(){
+
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+
+  const openSidebar = () => {
+    setSidebarOpen(!sidebarOpen);
+  }
   return (
-     <header className='header'>
+     <header className='deanheader'>
          <div className='menu-icon'>
              <BsJustify className='icon' onClick={openSidebar}/>
          </div>
@@ -22,7 +28,7 @@ import {BsPersonCircle, BsSearch, BsJustify} from 'react-icons/bs'
 
         <div className='header-right'>
              
-             <BsPersonCircle className='icon'/> The dean
+             <BsPersonCircle className='icon'/> The Dean
             
         </div>  
         </header>
