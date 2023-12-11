@@ -9,7 +9,7 @@ const custodianRoutes = require('./routes/custodian')
 const cors = require('cors');  
 
 const corsOpts = {
-    origin: 'https://muafs-frontend.vercel.app',
+    origin: 'https://muafs-frontend.vercel.app/',
     credentials: true,
     methods: ['GET','POST','HEAD','PUT','PATCH','DELETE'],
     allowedHeaders: ['Content-Type'],
