@@ -16,26 +16,31 @@ const hostelSchema = new Schema(
       type: String,
       required: true,
     },
+    custodianNo: {
+      type: String,
+      required: true,
+    },
+    custodianId: {
+      type: String,
+      unique: true,
+      required: true,
+    },
     rooms: {
       type: Number,
       required: true,
     },
-    amenities: {
-      type: String,
-      required: true
-    }
-    // roomType: [
-    //   {
-    //     type: String,
+    // amenities: {
+    //   type: [String],
+    //   required: true
+    // },
+    // roomType: {
+    //     type: [String],
     //     required: true,
     //   },
-    // ],
-    // price: [
-    //   {
-    //     type: Number,
+    // price: {
+    //     type: [Number],
     //     required: true,
     //   },
-    // ],
     // numberOfRoomsAvailable: [
     //   {
     //     type: Number,

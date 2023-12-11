@@ -13,25 +13,63 @@ const Login = () => {
   };
 
   return (
-    <div className="login-container">
-      <h2>Login</h2>
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          placeholder="Username"
-          value={username}
-          onChange={(e) => setUsername(e.target.value)}
-        />
-        <input
-          type="password"
-          placeholder="Password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-        />
+    <div>
+      <div className="Login-card">
+        <div className="Login-container">
+          <div className="login-card2">
+            <div className="card-image"></div>
+            <div className="login-page">
+              <form onSubmit={handleSubmit}>
+                <h1 align="center">Sign In</h1>
+                <h4>Please enter your details here</h4>
+                <div className="input-fields">
+                  <input
+                    type="text"
+                    onChange={(e) => setUsername(e.target.value)}
+                    value={username}
+                    placeholder="Enetr your Email"
+                  />
+                  <input
+                    type="password"
+                    onChange={(e) => setPassword(e.target.value)}
+                    value={password}
+                    placeholder="Enter your password"
+                  />
+                </div>
 
-        <button disabled={isLoading}>Login</button>
-        {error && <div className="error">{error}</div>}
-      </form>
+                <div className="checkboxes">
+                  <label>
+                    <input type="checkbox" /> Remember Me
+                  </label>
+                  <a className="forgot" href="./forgot-password">
+                    Forgot Password
+                  </a>
+                </div>
+
+                <button className="login-button">Login</button>
+                <div className="already-have-account">
+                  Do not have an account? <a href="/CreateAccount2">Sign Up</a>
+                </div>
+                <div className="divider">
+                  <hr />
+                  <span>OR</span>
+                  <hr />
+                </div>
+                <div className="api-options">
+                  <button className="google-api-button">
+                    {" "}
+                    Signup with Google
+                  </button>
+                  <button className="facebook-api-button">
+                    Signup with Facebook
+                  </button>
+                </div>
+                {error && <div className="error">{error}</div> }
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

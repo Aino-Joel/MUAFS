@@ -1,6 +1,7 @@
 import {useEffect, useState} from "react";
 import { Link, useParams } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
+import NotFound from "../pages/NotFound";
 
 function Details() {
     const { _id } = useParams();
@@ -10,6 +11,10 @@ function Details() {
     const fetchHostel = async () => {
       const response = await fetch('/api/hostels/'+_id)
       const json = await response.json()
+
+      if(response.status == "404"){
+        <NotFound />
+      }
 
       if(!response.ok){
           console.log('Error')
@@ -31,7 +36,7 @@ function Details() {
       {hostel && <h1>{ hostel.name }</h1>}
       <div className="main-banner" id="top">
         
-        <Link to={"/book"}>
+        <Link to={"/"+_id+"/book"}>
           <button className="button">Book a Room</button>
         </Link>
       </div>

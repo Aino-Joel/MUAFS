@@ -1,28 +1,7 @@
-import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import HostelList from "./HostelList";
 
 function Home() {
-  const [hostels, setHostels] = useState(null)
 
-  useEffect(() => {
-    const fetchHostels = async () => {
-      const response = await fetch('/api/hostels')
-      const json = await response.json()
-
-      if(!response.ok){
-          console.log('Error')
-      }
-
-      if(response.ok){
-        setHostels(json)
-      }
-    }  
-
-  fetchHostels()
-    
-  }, [])
-    
   return (
     <div>
       <section className="hero">
@@ -32,86 +11,6 @@ function Home() {
           <Link to={"/hostels"}>Start Now</Link>
         </div>
       </section>
-      <div className="product">
-        <h2 className="product-category">Recommended for you</h2>
-        <div className="product-container">
-          {hostels && hostels.map((hostel) => (
-            <HostelList key={hostel._id} hostel={hostel} />
-          ))}
-        </div>
-      </div>
-      
-      <div className="product">
-        <h2 className="product-category">
-          Popular Residences <tr />
-        </h2>
-        <span className="price">
-          <Link to={"/hostels"}>View all hostels</Link>
-        </span>
-        <br />
-        <div className="product-container">
-          <div className="product-card">
-            <div className="product-image">
-              <img
-                src="./pictures/room1.jpg"
-                className="product-thumb"
-                alt=""
-              />
-            </div>
-            <div className="product-info">
-              <h2 className="product-brand">Olympia Hostel, Kikoni</h2>
-            </div>
-          </div>
-          <div className="product-card">
-            <div className="product-image">
-              <img
-                src="./pictures/room1.jpg"
-                className="product-thumb"
-                alt=""
-              />
-            </div>
-            <div className="product-info">
-              <h2 className="product-brand">Julianna Girls' Hostel, Kikoni</h2>
-            </div>
-          </div>
-          <div className="product-card">
-            <div className="product-image">
-              <img
-                src="./pictures/room1.jpg"
-                className="product-thumb"
-                alt=""
-              />
-            </div>
-            <div className="product-info">
-              <h2 className="product-brand">Aryan Hostel, Wandegeya</h2>
-            </div>
-          </div>
-          <div className="product-card">
-            <div className="product-image">
-              <img
-                src="./pictures/room1.jpg"
-                className="product-thumb"
-                alt=""
-              />
-            </div>
-            <div className="product-info">
-              <h2 className="product-brand">Muhika Hostel, Kikoni</h2>
-            </div>
-          </div>
-          <div className="product-card">
-            <div className="product-image">
-              <img
-                src="./pictures/room1.jpg"
-                className="product-thumb"
-                alt=""
-              />
-            </div>
-            <div className="product-info">
-              <h2 className="product-brand">Baskon Hostel, Kikoni</h2>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   );
 }
