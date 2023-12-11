@@ -718,55 +718,6 @@ table tbody tr {
     table {
         width: 900px;
     }
-
-    /* Footer.css */
-.footer {
-  background-color: black;
-  color: white;
-  font-family: 'Times New Roman', Times, serif;
-  padding: 20px;
-  text-align: center;
-}
-
-.social-links {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 10px;
-}
-
-.social-links a {
-  color: white;
-  text-decoration: none;
-}
-
-.social-links a:hover {
-  text-decoration: underline;
-}
-/* CreateAccount.css */
-.create-account-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }  
-  .create-account-card {
-    width: 400px;
-    background-color: #085a0e;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-  }
-  
-  .login-card2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-  }
-  
-  .create-account-page {
-    text-align: center;
-  }
   
 /* Updated styles for the slider with modern transitions */
 .slide-button-option {
