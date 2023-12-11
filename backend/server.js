@@ -6,6 +6,17 @@ const hostelRoutes = require('./routes/hostels')
 const userRoutes = require('./routes/user')
 const bookingRoutes = require('./routes/bookingRoutes')
 const custodianRoutes = require('./routes/custodian')
+const cors = require('cors');  
+
+const corsOpts = {
+    origin: 'https://muafs-frontend.vercel.app',
+    credentials: true,
+    methods: ['GET','POST','HEAD','PUT','PATCH','DELETE'],
+    allowedHeaders: ['Content-Type'],
+    exposedHeaders: ['Content-Type']
+};
+
+app.use(cors(corsOpts));
 
 //express app
 const app = express()

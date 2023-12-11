@@ -24,7 +24,7 @@ function Book() {
     const booking = {name, email, phoneContact, checkInDate, roomType, roomSpec, hostelId:_id}
     console.log(booking)
 
-    const response = await fetch(`/${_id}/booking/create`, {
+    const response = await fetch(`https://muafs-backend.onrender.com/${_id}/booking/create`, {
         method: 'POST',
         body: JSON.stringify(booking),
         headers: {
