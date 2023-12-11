@@ -28,7 +28,6 @@ input.error {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  width: 200dvh;
 }
 @keyframes wave-animation {
   0% {
