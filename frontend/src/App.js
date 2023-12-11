@@ -15,7 +15,7 @@ import Footer from "./components/Footer";
 
 import Sidebar from './components/sidebar'
 import HomeDean from "./components/home-dean";
-import Header from './components/header-dean';
+// import Header from './components/header-dean';
 import CreateAccount from "./components/createaccount";
 import ViewHostels from "./components/hostels-dean";
 import "./css/header.css";
