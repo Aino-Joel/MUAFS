@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { FaSearch } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 function Home() {
@@ -23,9 +22,8 @@ function Home() {
                     placeholder="Search..."
                     value={search}
                     onChange={(e) => setSearch(e.target.value)}
-                    style={{position: "relative"}}
                 />
-                <button type="submit" style={{position: "absolute"}}><FaSearch /></button>
+                <button type="submit">Search</button>
             </form>
         </div>
       </section>
