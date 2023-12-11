@@ -90,7 +90,7 @@ function Details() {
                     width="16"
                     height="16"
                     fill="currentColor"
-                    class="bi bi-wifi"
+                    className="bi bi-wifi"
                     viewBox="0 0 16 16"
                   >
                     <path d="M15.384 6.115a.485.485 0 0 0-.047-.736A12.444 12.444 0 0 0 8 3C5.259 3 2.723 3.882.663 5.379a.485.485 0 0 0-.048.736.518.518 0 0 0 .668.05A11.448 11.448 0 0 1 8 4c2.507 0 4.827.802 6.716 2.164.205.148.49.13.668-.049z" />
@@ -104,7 +104,7 @@ function Details() {
                     width="16"
                     height="16"
                     fill="currentColor"
-                    class="bi bi-tablet-landscape"
+                    className="bi bi-tablet-landscape"
                     viewBox="0 0 16 16"
                   >
                     <path d="M1 4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4zm-1 8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v8z" />
@@ -119,7 +119,7 @@ function Details() {
                     width="16"
                     height="16"
                     fill="currentColor"
-                    class="bi bi-controller"
+                    className="bi bi-controller"
                     viewBox="0 0 16 16"
                   >
                     <path d="M11.5 6.027a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm2.5-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm-6.5-3h1v1h1v1h-1v1h-1v-1h-1v-1h1v-1z" />
@@ -137,7 +137,7 @@ function Details() {
                     width="16"
                     height="16"
                     fill="currentColor"
-                    class="bi bi-bus-front-fill"
+                    className="bi bi-bus-front-fill"
                     viewBox="0 0 16 16"
                   >
                     <path d="M16 7a1 1 0 0 1-1 1v3.5c0 .818-.393 1.544-1 2v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5V14H5v1.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2a2.496 2.496 0 0 1-1-2V8a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1V2.64C1 1.452 1.845.408 3.064.268A43.608 43.608 0 0 1 8 0c2.1 0 3.792.136 4.936.268C14.155.408 15 1.452 15 2.64V4a1 1 0 0 1 1 1v2ZM3.552 3.22A43.306 43.306 0 0 1 8 3c1.837 0 3.353.107 4.448.22a.5.5 0 0 0 .104-.994A44.304 44.304 0 0 0 8 2c-1.876 0-3.426.109-4.552.226a.5.5 0 1 0 .104.994ZM8 4c-1.876 0-3.426.109-4.552.226A.5.5 0 0 0 3 4.723v3.554a.5.5 0 0 0 .448.497C4.574 8.891 6.124 9 8 9c1.876 0 3.426-.109 4.552-.226A.5.5 0 0 0 13 8.277V4.723a.5.5 0 0 0-.448-.497A44.304 44.304 0 0 0 8 4Zm-3 7a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm8 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm-7 0a1 1 0 0 0 1 1h2a1 1 0 1 0 0-2H7a1 1 0 0 0-1 1Z" />
@@ -150,7 +150,7 @@ function Details() {
                     width="16"
                     height="16"
                     fill="currentColor"
-                    class="bi bi-shield-lock"
+                    className="bi bi-shield-lock"
                     viewBox="0 0 16 16"
                   >
                     <path d="M5.338 1.59a61.44 61.44 0 0 0-2.837.856.481.481 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.725 10.725 0 0 0 2.287 2.233c.346.244.652.42.893.533.12.057.218.095.293.118a.55.55 0 0 0 .101.025.615.615 0 0 0 .1-.025c.076-.023.174-.061.294-.118.24-.113.547-.29.893-.533a10.726 10.726 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.456 62.456 0 0 1 5.072.56z" />
@@ -164,7 +164,7 @@ function Details() {
                     width="16"
                     height="16"
                     fill="currentColor"
-                    class="bi bi-tv-fill"
+                    className="bi bi-tv-fill"
                     viewBox="0 0 16 16"
                   >
                     <path d="M2.5 13.5A.5.5 0 0 1 3 13h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zM2 2h12s2 0 2 2v6s0 2-2 2H2s-2 0-2-2V4s0-2 2-2z" />
@@ -178,9 +178,9 @@ function Details() {
           <hr />
         </div>
       </div>
-      <div class="description">
-        <h2 class="description-category">Description</h2>
-        <div class="description-container">
+      <div className="description">
+        <h2 className="description-category">Description</h2>
+        <div className="description-container">
           loren ipsum This website uses cookies and similar technologies to
           understand visitor experiences. By using this website, you consent to
           UNC-Chapel Hill's cookie usage in accordance with their Privacy
@@ -190,7 +190,7 @@ function Details() {
           Sk Original paragraph
         </div>
         <br />
-        <h4 class="heading">Rooms available</h4>
+        <h4 className="heading">Rooms available</h4>
         <table className='"table table-striped"'>
           <thead>
             <tr>

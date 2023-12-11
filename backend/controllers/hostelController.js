@@ -7,14 +7,15 @@ const getHostels = async (req, res) => {
     res.status(200).json(hostels)
 }
 
+//get single hostel
 const getHostel = async (req, res) => {
-    const {id} = req.params
+    const {_id} = req.params
 
-    if(!mongoose.Types.ObjectId.isValid(id)){
+    if(!mongoose.Types.ObjectId.isValid(_id)){
         return res.status(404).json({error: "No such Hostel"})
     }
 
-    const hostel = await Hostel.findById(id)
+    const hostel = await Hostel.findById(_id)
 
     if(!hostel){
         return res.status(404).json({error: error.message})
@@ -25,7 +26,7 @@ const getHostel = async (req, res) => {
 
 //create new Hostel
 const createHostel = async (req,res) => {
-    const {name, location, custodian, rooms} = req.body
+    const {name, location, custodian, custodianNo, custodianId, rooms} = req.body
 
     let emptyFields = []
 
@@ -38,6 +39,12 @@ const createHostel = async (req,res) => {
     if(!custodian){
         emptyFields.push('custodian')
     }
+    if(!custodianNo){
+        emptyFields.push('custodianNo')
+    }
+    if(!custodianId){
+        emptyFields.push('custodianId')
+    }
     if(!rooms){
         emptyFields.push('rooms')
     }
@@ -48,7 +55,7 @@ const createHostel = async (req,res) => {
     //add doc to db
     try {
         // const user_id = req.user._id
-        const hostel = await Hostel.create({name, location, custodian, rooms})
+        const hostel = await Hostel.create({name, location, custodian, custodianNo, custodianId, rooms})
         res.status(200).json(hostel)
     } catch(error) {
         res.status(400).json({error: error.message})
