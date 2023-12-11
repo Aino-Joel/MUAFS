@@ -16,15 +16,15 @@ function Home() {
           <h1>CampusCrib</h1>
           <p> Trust us to get you a home away from home</p>
           <Link to={"/hostels"}>Start Now</Link>
-          <form onSubmit={handleSubmit}>
-                <input
-                    type="text"
-                    placeholder="Search..."
-                    value={search}
-                    onChange={(e) => setSearch(e.target.value)}
-                />
-                <button type="submit">Search</button>
-            </form>
+          // <form onSubmit={handleSubmit}>
+          //       <input
+          //           type="text"
+          //           placeholder="Search..."
+          //           value={search}
+          //           onChange={(e) => setSearch(e.target.value)}
+          //       />
+          //       <button type="submit">Search</button>
+          //   </form>
         </div>
       </section>
     </div>
