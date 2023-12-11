@@ -17,7 +17,7 @@ const CustodianDashboard = () => {
   useEffect(() => {
     const fetchHostel = async () => {
       try {
-        const response = await fetch("/api/custodian", {
+        const response = await fetch("https://muafs-backend.onrender.com/api/custodian", {
           headers: {
             Authorization: `Bearer ${user.token}`,
           },

@@ -7,7 +7,7 @@ function Hostels() {
 
   useEffect(() => {
     const fetchHostels = async () => {
-      const response = await fetch('/api/hostels')
+      const response = await fetch('https://muafs-backend.onrender.com/api/hostels')
       const json = await response.json()
 
       if(!response.ok){
