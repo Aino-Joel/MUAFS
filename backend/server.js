@@ -16,12 +16,12 @@ const corsOpts = {
     exposedHeaders: ['Content-Type']
 };
 
-app.use(cors(corsOpts));
-
 //express app
 const app = express()
 
 //middleware
+app.use(cors(corsOpts));
+
 app.use(express.json())
 
 app.use((req, res, next) => {
